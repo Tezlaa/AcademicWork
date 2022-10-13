@@ -14,12 +14,12 @@ int main()
     n = 0;
 
     while (abs(u2 - u1) >= e)
-    {   
+    {
         u1 = u2;
         n = n + 2;
-        u2 = u1 + (pow(x, n) / n);
+        u2 = u1 + (x / (n + 1));
         result = u2;
     }
 
-    cout << "n: " << n << endl << "R: " << result << endl;
+    cout << "R: " << result << endl;
 }
