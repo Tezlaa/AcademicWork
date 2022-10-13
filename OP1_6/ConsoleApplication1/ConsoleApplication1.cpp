@@ -3,10 +3,8 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";
-
-    int n, k, i, d;
-    float f;
+    int n, k, i;
+    float f, d, result;
 
     cout << "Write n,k 0<=k<=n" << endl;
     cin >> n; cin >> k;
@@ -17,16 +15,18 @@ int main()
     {
         f = f * i;
     }
-
-    i = 0;
+    //main
+    i = 1;
     d = 1;
     do
     {
         i++;
         d = d * (n * (n - i));
-        
+
     } while (i < k);
 
-    cout << endl << d / f << endl;
+    result = d / f;
+    cout << result << endl;
+
     return 0;
 }

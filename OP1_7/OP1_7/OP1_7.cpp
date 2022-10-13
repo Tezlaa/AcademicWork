@@ -3,8 +3,6 @@ using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
-    
     float e, x, u1, u2, result, n;
 
     cout << "Write X: "; cin >> x;
@@ -23,6 +21,5 @@ int main()
         result = u2;
     }
 
-    cout << "N - " << n/2 << endl << "R - " << result << endl;
-
+    cout << "n: " << n << endl << "R: " << result << endl;
 }
