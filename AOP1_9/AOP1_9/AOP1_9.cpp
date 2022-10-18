@@ -21,12 +21,14 @@ int main()
     {
         if (arr[di] > m1)
         {
+            cout << arr[di] << ">" << m1 << endl;
             m2 = m1;
             i1 = di;
             m1 = arr[di];
         }
         else if (arr[di] > m2)
         {
+            cout << arr[di] << ">" << m2 << endl;
             m2 = arr[di];
             i2 = di;
         }
