@@ -3,22 +3,31 @@ using namespace std;
 
 int main()
 {
-	int t, age;
+	int age, i;
 	float result;
+
 	const int n = 10;
 
-	cin >> age;
-	int* m = new int[age];
+	cin >>age;
 
-	for (t = 1; t <= age; t++)
+	float* t = new float[age];
+	float* m = new float[age];
+
+	for (i = 1; i <= age; i++)
 	{
-		m[t] = 0 + rand() % 1000;
+		t[i] = 1 + rand() % 12;
+		cout << t[i] << " \n";
+	}
 
-		cout << m[t] << "\t";
+	for (i = 1; i <= age; i++)
+	{
+		m[i] = 0 + rand() % 1000;
 
-		result = m[t] / (n * t);
+		cout << m[i] << "\t";
 
-		cout << "AGE " << t << " - " << result << " Off\n";
+		result = m[i] / (n * t[i]);
+
+		cout << "AGE " << i << " - " << result << " Off\n";
 	}
 
 
