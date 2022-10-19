@@ -9,7 +9,9 @@ int main()
     double y, bigp;
 
     int* fi = new int[5];
+
     cout << "Фи масив: ";
+
     for (index = 0; index < 5; index++)
     {
         fi[index] = rand() % 301;
@@ -17,7 +19,9 @@ int main()
     }
 
     cout << "\n\nП от i=1 до 5: ";
+
     bigp = 1;
+
     for (index = 1; index <= 5; index++) 
     {
         bigp *= pow(sin(fi[index]), 2);
@@ -27,4 +31,6 @@ int main()
     y = pow(cos(fi[2]), 2) - bigp;
 
     cout << "\n\nY = " << y << endl;
+
+    return 0;
 }

@@ -1,0 +1,4 @@
+﻿  OP1_9.cpp
+D:\Developments\C++\LAB WORK\OP1_9\OP1_9\OP1_9.cpp(14,20): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\Developments\C++\LAB WORK\OP1_9\OP1_9\OP1_9.cpp(24,29): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  OP1_9.vcxproj -> D:\Developments\C++\LAB WORK\OP1_9\x64\Debug\OP1_9.exe
