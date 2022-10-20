@@ -14,7 +14,7 @@ int main()
         a[i] = -20 +rand() % 30;
         cout << a[i] << " ";
     }
-    
+    cout << endl << endl;
     for (i = 0; i < hm; i++) 
     {
         if (a[i] > 0)
@@ -22,11 +22,15 @@ int main()
             for (;i < hm; i++)
             {
                 a[i] = a[i] - 0.5;
-                cout << endl << i << ": " << a[i] << " ";
             }
             break;
         }
         
+    }
+
+    for (i = 0; i < hm; i++) 
+    {
+        cout << a[i] << " ";
     }
 
     return 0;
