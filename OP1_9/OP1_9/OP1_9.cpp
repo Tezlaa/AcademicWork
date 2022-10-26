@@ -1,37 +1,42 @@
 ﻿#include <iostream>
+#include <cmath>
+#include <ctime>
 using namespace std;
 
 int main()
 {
-    int i, hm;
+    srand(time(0));
+    int N, k, d;
+    float max;
+    cout << "Введіть кількість елементів масиву ";
+    cin >> N;
+    float* a = new float[N];
 
-    cout << "Write how many elements you want in the array:"; cin >> hm;
-
-    float* a = new float[hm];
-
-    for (i = 0; i < hm; i++)
+    for (int i = 0; i < N; i++)
     {
-        a[i] = -20 +rand() % 30;
-        cout << a[i] << " ";
+        a[i] = 0.1 * (rand() % 201);
+        cout << "a[" << i << "] = " << a[i] << endl;
     }
-    cout << endl << endl;
-    for (i = 0; i < hm; i++) 
+    cout << endl;
+    k = -1;
+    for (int i = 0; i < N; i++)
     {
-        if (a[i] > 0)
+        if (0 > a[i] && k == -1)
         {
-            for (;i < hm; i++)
-            {
-                a[i] = a[i] - 0.5;
-            }
-            break;
+            k = i;
         }
-        
     }
-
-    for (i = 0; i < hm; i++) 
+    for (int i = 0; i < N; i++)
     {
-        cout << a[i] << " ";
+        if (a[i]<0 && a[i]>a[k])
+        {
+            k = i;
+        }
     }
+    cout << "Номер максимального від'ємного елементу "
+        << k << endl;
+    cout << "Максимальне від'ємне значення: " << a[k];
 
+    delete[] a;
     return 0;
 }
