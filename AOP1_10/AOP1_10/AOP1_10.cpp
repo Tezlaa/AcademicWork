@@ -4,36 +4,33 @@ using namespace std;
 
 int main()
 {
-    int N;
-    float p, sum;
+    int N, i;
+
     cout << "N = "; cin >> N;
+
     float* a = new float[N * 2];
-    for (int i = 0; i < N * 2; i++)
+
+    for (i = 0; i < N * 2; i++)
     {
         a[i] = 0.1 * (rand() % 201 - 100);
         cout << i << "|" << a[i] << "\t";
     }
 
-    for (int i = 0; i < N; i++)
+    for (i = 0; i < N; i++)
     {
-        sum = a[i] + a[N * 2 - 1 - i];
+        cout << "\nsum: " << a[i] + a[N * 2 - 1 - i] << endl;
+        a[i] = a[i] + a[N * 2 - 1 - i];
 
-        if (i != (N + 1))
-        {
-            p = a[i];
-            a[i] = a[i] + a[N * 2 - 1 - i];
-            a[N * 2 - 1 - i] = p;
-        }
-        else
-            break;
     }
 
     cout << endl << endl;
 
-    for (int i = 0; i < N; i++)
+    for (i = 0; i < N; i++)
     {
         cout << "val[" << i << "] = " << a[i] << endl;
     }
+
+
     delete[] a;
     a = nullptr;
 }
