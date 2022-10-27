@@ -1,0 +1,6 @@
+﻿  AOP1_11.cpp
+D:\Developments\C++\LAB WORK\AOP1_11\AOP1_11\AOP1_11.cpp(21,18): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\Developments\C++\LAB WORK\AOP1_11\AOP1_11\AOP1_11.cpp(27,14): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+D:\Developments\C++\LAB WORK\AOP1_11\AOP1_11\AOP1_11.cpp(31,15): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+D:\Developments\C++\LAB WORK\AOP1_11\AOP1_11\AOP1_11.cpp(38,17): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+  AOP1_11.vcxproj -> D:\Developments\C++\LAB WORK\AOP1_11\x64\Debug\AOP1_11.exe
