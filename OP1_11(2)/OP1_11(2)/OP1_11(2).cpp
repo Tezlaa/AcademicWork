@@ -1,76 +1,77 @@
 ﻿
-#include <iostream>
-using namespace std;
 
-int m, n;
-int arr[10][10];
+#include <iostream>
+#include <iomanip>
+using namespace std;
 
 int main()
 {
+    int m, n, i, j;
+    float sumn, tamp;
+
     setlocale(LC_ALL, "Russian");
-    cout << "Введите количество рядков: ";
-    cin >> m;
-    cout << "Введите количество столбцов: ";
-    cin >> n;
+    cout << "Введите количество рядков: "; cin >> m;
+    cout << "Введите количество столбцов: "; cin >> n;
 
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            arr[i][j] = 2 + rand() % 31;
-        }
-    }
+    float** a = new float* [m];
+    float* sum = new float[m];
 
-    cout << "Ваш массив: " << endl;
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            cout << arr[i][j] << " ";
-        }
-        cout << endl;
-    }
+    for (i = 0; i < m; i++)
+        a[i] = new float[n];
 
-
-    int arr_buf[1];            // Буфер.      
-    int s_now = 0, s_prev = 0;    // Суммы.
-
-    // !!! Цикл СОРТИРОВКИ !!! 
-    for (int z = 0; z < m; z++)
+    for (i = 0; i < m; i++)
     {
-        int* ptr_arr = &arr[z][0];    // Указатель на первый эллемент z-ого ряда в массиве.
-        for (int i = z; i < m; i++)
+        for (j = 0; j < n; j++)
         {
-            // Вычисляем сумму элементов в рядах.
-            for (int j = 0; j < n; j++)
-            {
-                s_prev += *ptr_arr;
-                s_now += arr[i][j];
-            }
-            // Если сумма предыдущего оказалась больше тепущего, меняем их местами .
-            if (s_now > s_prev)
-            {
-                // Перестановка рядов в массиве arr[], путем копирования каждого эллемента стороки в буфер(arr_buf[]).
-                for (int k = 0; k < n; k++)
-                {
-                    arr_buf[k] = arr[i][k];   // Заполняем буфер "меньшим" рядом.
-                    arr[i][k] = *ptr_arr;     // Заменяем "меньший", "больший".
-                    *ptr_arr = arr_buf[k];    // Копируем из буфера "меньший" и вставляем вместо того значения,
-                    //на адрес которого указывает указатель.
-                    ptr_arr++;  // Присваиваем указателю следующее значение столбца.
-                }
-                ptr_arr -= n; // Возвращаем указатель на первоночальное значение. 
+            a[i][j] = -10 + rand() % 21;
+            cout << setw(5) << a[i][j];
+        }
+        cout << endl;
+    }
 
+    for (j = 0; j < n; j++)
+    {
+        sumn = 0;
+        for (i = 0; i < m; i++)
+        {
+            sumn += a[i][j];
+        }
+        sum[j] = sumn;
+    }
+
+    for (j = 0; j < n; j++)
+    {
+        if (sum[j] < sum[j + 1])
+        {
+            tamp = sum[j];
+            sum[j] = sum[j + 1];
+            sum[j + 1] = tamp;
+
+            for (i = 0; i < m ; i++)
+            {
+                tamp = a[i][j];
+                a[i][j] = a[i][j + 1];
+                a[i][j + 1] = tamp;
             }
-            s_now = 0; // Обнуляем суммы.
-            s_prev = 0;
+            j = 0;
         }
     }
 
-    // Вывод отсортированного по рядам массива.
-    cout << endl << "Отсортированный масив :" << endl;
-    for (int i = 0; i < m; i++)
+    for (j = 0; j < m; j++)
     {
-        for (int j = 0; j < n; j++)
-            cout << arr[i][j] << " ";
+        cout << sum[j] << " ";
+    }
+    cout << endl;
+
+    for (i = 0; i < m; i++)
+    {
+        for (j = 0; j < n; j++)
+        {
+            cout << setw(5) << a[i][j];
+        }
         cout << endl;
     }
-    system("pause");
+
+    delete[]a; delete[]sum;
     return 0;
 }
