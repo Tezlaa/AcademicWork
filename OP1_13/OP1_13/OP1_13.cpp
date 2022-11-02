@@ -2,11 +2,11 @@
 #include <complex>
 using namespace std;
 
-float square_equation(float, float, float);
+float s_e(float, float, float);
 
-//1 -6 10      x1 = 3+2i   x2 = 3-2i
-//2 -5 3       x1 = 1.5   x2 = 1
-//1 13 15      x1 = -1.27   x2 = -11.72
+//1 3 -5        x1 = -1.41   x2 = 1.41
+//2 -5 3        x1 = 1.5     x2 = 1
+//1 13 15       x1 = -1.27   x2 = -11.72
 
 int main()
 {
@@ -19,11 +19,11 @@ int main()
         cout << "Write b: "; cin >> number_b;
         cout << "Write c: "; cin >> number_c;
         if (i == 1)
-            min_1 = square_equation(number_a, number_b, number_c);
+            min_1 = s_e(number_a, number_b, number_c);
         if (i == 2)
-            min_2 = square_equation(number_a, number_b, number_c);
+            min_2 = s_e(number_a, number_b, number_c);
         if (i == 3)
-            min_3 = square_equation(number_a, number_b, number_c);
+            min_3 = s_e(number_a, number_b, number_c);
         
     }
 
@@ -38,38 +38,32 @@ int main()
     return 0;
 }
 
-float square_equation(float a, float b, float c)
+float s_e(float a, float b, float c)
 {
-    float x1, x2, x1_i, x2_i, in; //declare variables for the function
+    float x1, x2, min; //declare variables for the function
 
     float d = b * b - 4 * a * c; // calculate the discriminant
 
-    cout << d << endl;
     if (d > 0) // if discriminant > 0
     {
         x1 = ((-b) + sqrt(d)) / (2 * a);
         x2 = ((-b) - sqrt(d)) / (2 * a);
         if (x1 < x2)
         {
-            return x1;
+            min = x1;
         }
         else
-            return x2;
+            min = x2;
     }
     if (d == 0) // if discriminant = 0
     {
         x1 = -(b / (2 * a));
-        return x1;
+        min = x1;
     }
     if (d < 0) // if discriminant < 0
     {
-        x1_i = ((-b) + sqrt(d * -1)) / (2 * a);
-        x2_i = ((-b) - sqrt(d * -1)) / (2 * a);
-        if (x1_i < x2_i)
-        {
-            return x1_i;
-        }
-        else
-            return x2_i;
+        min = pow(10, 10);
     }
+
+    return min;
 }
