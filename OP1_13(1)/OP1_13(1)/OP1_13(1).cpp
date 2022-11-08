@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 using namespace std;
 
+void func(float*, int);
 int main()
 {
     int n, i;
@@ -15,17 +16,42 @@ int main()
         cout << array[i] << " ";
     }
 
+    cout << "\n\n";
+
+    func(array, n);
+
+    for (i = 0; i < n; i++)
+    {
+        cout << array[i] << " ";
+    }
+
+    cout << "\n\n";
+
     return 0;
 }
 
-float func(float *a, int length)
+void func(float *a, int length)
 {
     float min;
-
+    int imin;
+    
+    imin = 0;
     min = a[0];
 
-    for (int i = 1; i = length; i++)
+    for (int i = 1; i < length; i++)
     {
-        -
+        if (min > a[i])
+        {
+            min = a[i];
+            imin = i;
+        }
+    }
+
+    for (int i = imin + 1; i < length; i++)
+    {
+        if (i % 2 != 0)
+        {
+            a[i] = a[i] * min;
+        }
     }
 }
