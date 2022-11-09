@@ -2,39 +2,12 @@
 using namespace std;
 
 void func(float*, int);
-int main()
-{
-    int n, i;
 
-    cout << "Write length array: "; cin >> n;
-
-    float *array = new float[n];
-
-    for (i = 0; i < n; i++)
-    {
-        *(array + i) = (0.2 + rand() % 15) / 3;
-        cout << *(array + i) << " ";
-    }
-
-    cout << "\n\n";
-
-    func(array, n);
-
-    for (i = 0; i < n; i++)
-    {
-        cout << *(array + i) << " ";
-    }
-
-    cout << "\n\n";
-
-    return 0;
-}
-
-void func(float *a, int length)
+void func(float* a, int length)
 {
     float min;
     int imin;
-    
+
     imin = 0;
     min = *a;
 
@@ -54,4 +27,32 @@ void func(float *a, int length)
             *(a + i) *= min;
         }
     }
+}
+
+int main()
+{
+    int n, i;
+
+    cout << "Write length array: "; cin >> n;
+
+    float *array = new float[n];
+
+    for (i = 0; i < n; i++)
+    {
+        *(array + i) = (0.2 + rand() % 15) / 3;
+        cout << i << ") " << *(array + i) << "\n";
+    }
+
+    cout << "\n\nResult: \n";
+
+    func(array, n);
+
+    for (i = 0; i < n; i++)
+    {
+        cout << i << ") " << *(array + i) << "\n";
+    }
+
+    cout << "\n\n";
+
+    return 0;
 }

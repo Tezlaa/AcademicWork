@@ -2,10 +2,9 @@
 #include <iomanip>
 using namespace std;
 
+int search_max(int**, int);
 
-void search_max(int**, int);
-
-void search_max(int** matrix, int m)
+int search_max(int** matrix, int m)
 {
 	int i, j, max;
 
@@ -21,13 +20,12 @@ void search_max(int** matrix, int m)
 			}
 		}
 	}
-	cout << max;
+	return max;
 }
 
 int main()
 {
 	int m, i, j;
-	float number;
 
 	cout << "Length matrix (M) :"; cin >> m;
 
@@ -47,7 +45,9 @@ int main()
 	}
 
 	cout << endl;
-	search_max(matrix, m);
+	int result = search_max(matrix, m);
+
+	cout << result;
 
 	return 0;
 }

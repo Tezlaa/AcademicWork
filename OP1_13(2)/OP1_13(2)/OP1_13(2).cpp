@@ -1,10 +1,13 @@
 ﻿#include <iostream>
 using namespace std;
 
-int ready(int* , int);
+int countready = 0;
+
+void ready(int* , int);
+
 int main()
 {
-    int n, i, t;
+    int n, i;
 
     cout << "Write quantities: "; cin >> n;
 
@@ -12,26 +15,25 @@ int main()
 
     for (i=0; i < n; i++)
     {
-        *(array + i) = rand() % 26;
+        *(array + i) = rand() % 26;   
         cout << *(array + i) << " ";
     }
 
-    cout << "\n\n\n" << ready(array, n) << endl;
+    ready(array, n);
+
+    cout << "\n\n\n" << countready;
 
     return 0;
 }
 
-int ready(int* arr, int length)
+void ready(int* arr, int length)
 {
-    int ready = 0;
 
     for (int i = 0; i < length; i++)
     {
         if (*(arr + i) >= 20)
         {
-            ready += 1;
+            countready += 1;
         }
     }
-
-    return ready;
 }
