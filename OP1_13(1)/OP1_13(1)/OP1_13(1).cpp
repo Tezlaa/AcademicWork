@@ -12,8 +12,8 @@ int main()
 
     for (i = 0; i < n; i++)
     {
-        array[i] = (0.2 + rand() % 15) / 3;
-        cout << array[i] << " ";
+        *(array + i) = (0.2 + rand() % 15) / 3;
+        cout << *(array + i) << " ";
     }
 
     cout << "\n\n";
@@ -22,7 +22,7 @@ int main()
 
     for (i = 0; i < n; i++)
     {
-        cout << array[i] << " ";
+        cout << *(array + i) << " ";
     }
 
     cout << "\n\n";
@@ -36,13 +36,13 @@ void func(float *a, int length)
     int imin;
     
     imin = 0;
-    min = a[0];
+    min = *a;
 
     for (int i = 1; i < length; i++)
     {
-        if (min > a[i])
+        if (min > *(a + i))
         {
-            min = a[i];
+            min = *(a + i);
             imin = i;
         }
     }
@@ -51,7 +51,7 @@ void func(float *a, int length)
     {
         if (i % 2 != 0)
         {
-            a[i] = a[i] * min;
+            *(a + i) *= min;
         }
     }
 }
