@@ -1,2 +1,2 @@
 #pragma once
-void SetColor(int, int);
+void SC(int, int);
