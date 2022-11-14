@@ -29,7 +29,7 @@ int main()
 {
     string text, result;
 
-    cout << "Write your characters via spaces: "; getline(cin, text);
+    cout << "Write your number: "; getline(cin, text);
     
     result = print_in_column(text);
 
