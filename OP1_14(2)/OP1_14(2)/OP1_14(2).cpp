@@ -4,26 +4,39 @@
 
 using namespace std;
 
-void array_text(string main_text, char *word_array, string indent)
+void array_text(string main_text, string *word_array)
 {
-    int i, j=0; // j - index for counts columns
+    int i, j=0; // j - index for counts word in the result array 
 
     for (i = 0; i < main_text.size(); i++) //cycle 
     {
-        if (main_text[i] == ' ') // if symbol = space, then check user selection
+        if (main_text[i] == ' ') // if symbol
         {
-            if (indent == "1")
-                word_array[j] = '\n'; //move to a new line
-            else
-                word_array[j] = ' '; // add space
-            j++; // move to new char in the result array
+            j++; // move to new word in the array
         }
         else // if symbol != space 
         {
-            word_array[j] = main_text[i]; // add char by index to the result array
-            j++; // move to a new char in the result array
+            word_array[j] += main_text[i]; // add char by index to the result array
         }
     }
+}
+
+int count_word_in_text(string main_text) //check count word in text 
+{
+    int result_counter = 0;
+    for (int i = 0; i < main_text.size(); i++)
+    {
+        if (main_text[i] == ' ')
+        {
+            result_counter += 1;
+        }
+    }
+    if (main_text[main_text.size()] != ' ') // to correct where the last char is a space
+    {
+        result_counter += 1;
+    }
+
+    return result_counter;
 }
 
 int main()
@@ -43,16 +56,23 @@ int main()
     SC(10, 0)/*green*/;
     getline(cin, select);
 
+    if (select == "1") // check user selection
+        select = "\n"; //replacement on new line
+    else
+        select = ' '; //replacement on space
+
     SC(15, 0);//White
     cout << "\n\n-------------------------RESULT------------------------\n\n";
     SC(10, 0);//Green
 
-    char* word_array = new char[text.size()];
+    int count_word = count_word_in_text(text); 
 
-    array_text(text, word_array, select);
+    string* word_array = new string[count_word];
 
-    for (int i = 0; i < text.size(); i++)
-        cout << word_array[i];
+    array_text(text, word_array);
+
+    for (int i = 0; i < count_word; i++)
+        cout << word_array[i] + select;
 
     cout << "\n\n";
 
