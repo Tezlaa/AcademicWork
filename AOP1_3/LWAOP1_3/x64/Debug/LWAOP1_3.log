@@ -1,5 +1,0 @@
-﻿  LWAOP1_3.cpp
-D:\Developments\C++\LAB WORK\AOP1_3\LWAOP1_3\LWAOP1_3.cpp(8,34): warning C4101: ab_3: неиспользованная локальная переменная
-D:\Developments\C++\LAB WORK\AOP1_3\LWAOP1_3\LWAOP1_3.cpp(8,24): warning C4101: ab_2: неиспользованная локальная переменная
-D:\Developments\C++\LAB WORK\AOP1_3\LWAOP1_3\LWAOP1_3.cpp(8,13): warning C4101: ab_1: неиспользованная локальная переменная
-  LWAOP1_3.vcxproj -> D:\Developments\C++\LAB WORK\AOP1_3\x64\Debug\LWAOP1_3.exe

@@ -1,0 +1,4 @@
+﻿  LWOP1_2.cpp
+D:\Developments\C++\LAB WORK\OP1_2\LWOP1_2\LWOP1_2.cpp(17,31): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\Developments\C++\LAB WORK\OP1_2\LWOP1_2\LWOP1_2.cpp(21,31): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  LWOP1_2.vcxproj -> D:\Developments\C++\LAB WORK\OP1_2\x64\Debug\LWOP1_2.exe

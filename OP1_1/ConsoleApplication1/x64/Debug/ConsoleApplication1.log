@@ -1,4 +1,0 @@
-﻿  ConsoleApplication1.cpp
-D:\Developments\C++\Lb1_1\ConsoleApplication1\ConsoleApplication1.cpp(10,37): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-D:\Developments\C++\Lb1_1\ConsoleApplication1\ConsoleApplication1.cpp(12,26): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-  ConsoleApplication1.vcxproj -> D:\Developments\C++\Lb1_1\x64\Debug\ConsoleApplication1.exe
