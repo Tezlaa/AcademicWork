@@ -1,0 +1,8 @@
+﻿  OP2_1.cpp
+D:\Developments\C++\LAB WORK\Semester2\OP2_1\OP2_1\OP2_1\OP2_1.cpp(108,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Developments\C++\LAB WORK\Semester2\OP2_1\OP2_1\OP2_1\OP2_1.cpp(155,62): message : выполняется компиляция ссылки на экземпляр шаблон функции "T **create_random_matrix<int>(int,int)"
+          with
+          [
+              T=int
+          ]
+  OP2_1.vcxproj -> D:\Developments\C++\LAB WORK\Semester2\OP2_1\OP2_1\x64\Debug\OP2_1.exe
