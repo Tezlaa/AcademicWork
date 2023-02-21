@@ -1,0 +1,20 @@
+﻿  OP2_1(2).cpp
+D:\Developments\C++\AcademicWork\Semester2\OP2_1\OP2_1(2)\OP2_1(2)\OP2_1(2)\OP2_1(2).cpp(195,23): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Developments\C++\AcademicWork\Semester2\OP2_1\OP2_1(2)\OP2_1(2)\OP2_1(2)\OP2_1(2).cpp(344,72): message : выполняется компиляция ссылки на экземпляр шаблон функции "T *create_array_one_dimen<int>(int)"
+          with
+          [
+              T=int
+          ]
+D:\Developments\C++\AcademicWork\Semester2\OP2_1\OP2_1(2)\OP2_1(2)\OP2_1(2)\OP2_1(2).cpp(251,23): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Developments\C++\AcademicWork\Semester2\OP2_1\OP2_1(2)\OP2_1(2)\OP2_1(2)\OP2_1(2).cpp(356,72): message : выполняется компиляция ссылки на экземпляр шаблон функции "T **create_array_two_dimen<int>(int)"
+          with
+          [
+              T=int
+          ]
+D:\Developments\C++\AcademicWork\Semester2\OP2_1\OP2_1(2)\OP2_1(2)\OP2_1(2)\OP2_1(2).cpp(312,23): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Developments\C++\AcademicWork\Semester2\OP2_1\OP2_1(2)\OP2_1(2)\OP2_1(2)\OP2_1(2).cpp(367,76): message : выполняется компиляция ссылки на экземпляр шаблон функции "T ***create_array_three_dimen<int>(int)"
+          with
+          [
+              T=int
+          ]
+  OP2_1(2).vcxproj -> D:\Developments\C++\AcademicWork\Semester2\OP2_1\OP2_1(2)\OP2_1(2)\x64\Debug\OP2_1(2).exe
