@@ -238,8 +238,10 @@ void search_menu(Boat boats[], int n)
 void edit_menu(Boat boats[], int n)
 {
     int edit_index;
+    string edit_name;
 
-    cout << "Enter index of boat to edit: "; cin >> edit_index;
+    cout << "Enter name of boat to edit: "; cin >> edit_name;
+    edit_index = search_by_name(boats, n, edit_name);
     cin.ignore(); // to clear the input buffer
     if (edit_index >= 0 && edit_index < n) {
         cout << "Editing boat #" << edit_index + 1 << ":" << endl;
