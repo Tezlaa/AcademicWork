@@ -1,0 +1,3 @@
+﻿  С2_4(2).cpp
+D:\Developments\C++\AcademicWork\Semester2\С2_4(2)\С2_4(2)\С2_4(2).cpp(13,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  С2_4(2).vcxproj -> D:\Developments\C++\AcademicWork\Semester2\С2_4(2)\x64\Debug\С2_4(2).exe

@@ -1,0 +1,5 @@
+Tishenko 0 0 1 0 
+Andreyenko 1 1 0 1 
+Kuzmenkova 0 0 0 1 
+Tarasenko 1 0 1 0 
+Panasenko 1 1 1 1 
