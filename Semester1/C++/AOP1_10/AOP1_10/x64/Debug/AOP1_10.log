@@ -1,0 +1,3 @@
+﻿  AOP1_10.cpp
+D:\Developments\C++\LAB WORK\AOP1_10\AOP1_10\AOP1_10.cpp(15,20): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  AOP1_10.vcxproj -> D:\Developments\C++\LAB WORK\AOP1_10\x64\Debug\AOP1_10.exe
