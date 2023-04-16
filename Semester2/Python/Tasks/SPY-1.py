@@ -1,28 +1,27 @@
-import array
 
 
 if __name__ == "__main__":
-    # """
-    # args:
-    #     text(str): all text
-    #     text_before_symbol(str): cropped text + 1 before symbol - ':'
-    # """
+    """
+    args:
+        text(str): all text
+        text_before_symbol(str): cropped text + 1 before symbol - ':'
+    """
     
-    # text = input('Write text: ')
+    text = input('Write text: ')
     
-    # text_before_symbol = text[:text.find(':') + 1]
-    # print(text_before_symbol)
+    text_before_symbol = text[:text.find(':') + 1]
+    print(text_before_symbol)
     
-    # """
-    # args:
-    #     text(str): all text
-    # """
-    # text = input('Write text: ').lower()
+    """
+    args:
+        text(str): all text
+    """
+    text = input('Write text: ').lower()
     
-    # print(f"\n\tcount symbol 'a' - {text.count('a')}"
-    #       f"\n\tcount symbol 'b' - {text.count('b')}"
-    #       f"\n\tcount symbol 'c' - {text.count('c')}"
-    #       f"\n\tcount symbol 'd' - {text.count('d')}\n")
+    print(f"\n\tcount symbol 'a' - {text.count('a')}"
+          f"\n\tcount symbol 'b' - {text.count('b')}"
+          f"\n\tcount symbol 'c' - {text.count('c')}"
+          f"\n\tcount symbol 'd' - {text.count('d')}\n")
     
     """
     args:
