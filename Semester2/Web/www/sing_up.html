@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrevUA | Sing Up</title>
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- STATIC FILES -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="wrapper_header">
+                <div class="logo_header">
+                    <a href="index.html"><img src="static/images/logo.jpg" alt=""></a>
+                </div>
+                <ul class="header_nav">
+                    <li class="header_item">
+                        <a href="resume.html" class="header_link">Резюме</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="style_CSS.html" class="header_link">Стилі CSS</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#" class="header_link">Подорожі</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="interview.html" class="header_link">Опитування</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="sing_up.html" class="header_link">Реєстрація</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="sing_up">
+        <div class="sing_up_wrapp">
+            <div class="sing_up_window">
+                <br>
+                <h1>Реєстрація</h1>
+                <br>
+                <br>
+                <form>
+                    <label for="first-name">Ім'я:</label>
+                    <input type="text" id="first-name" name="first-name"><br>
+                  
+                    <label for="last-name">Прізвище:</label>
+                    <input type="text" id="last-name" name="last-name"><br>
+                  
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password"><br>
+                  
+                    <label for="country">Країна:</label>
+                    <select id="country" name="country">
+                      <option value="ukraine">Україна</option>
+                      <option value="GE">Німеччина</option>
+                      <option value="America">США</option>
+                      <option value="poland">Польща</option>
+                    </select><br>
+                  
+                    <label for="birthday">Дата народження:</label>
+                    <input type="date"><br>
+                  
+                    <label>Стать:</label>
+                    <label for="male">Чоловік</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Жінка</label>
+                    <input type="radio" id="female" name="gender" value="female"><br>
+                  
+                    <label>Кількість листів на день:</label>
+                    <label for="one">1</label>
+                    <input type="checkbox" id="one" name="letters" value="1">
+                    <label for="two">2</label>
+                    <input type="checkbox" id="two" name="letters" value="2">
+                    <label for="three">3</label>
+                    <input type="checkbox" id="three" name="letters" value="3"><br>
+                  
+                    <label for="interests">Інтереси:</label>
+                    <select id="interests" name="interests" multiple>
+                      <option value="sport">Спорт</option>
+                      <option value="music">Музика</option>
+                      <option value="books">Книги</option>
+                      <option value="movies">Фільми</option>
+                    </select><br>
+                    <label for="notes">Примітки:</label><br>
+                    <textarea id="note" name="note" rows="5" cols="40"></textarea><br>
+
+                    <div class="wrapper_button">
+                        <div class="reset_form_interview">
+                            <button type="reset">Очистити форму</button>
+                        </div>
+                        <div class="sumbit_form_interview">
+                            <button type="submit">Отправить</button>
+                        </div>
+                    </div>
+                  
+
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

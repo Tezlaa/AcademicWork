@@ -1,0 +1,197 @@
+/* FILE 1 */
+.k1 {
+    width: 200px;
+    height: 200px;
+    
+    background-color: aqua;
+    
+    border-style: solid;
+    border-color: #009933;
+    border-width: 3px;
+    
+    margin-right: 15px;
+    
+    padding: 10px;
+}
+
+.k1:last-child{
+    margin-right: 0px;
+}
+
+.file1__wrapper {
+    margin-top: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* FILE 2 */
+.file2__k1 {
+    display: none;
+
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 0);
+    border-style: solid;
+    border-color: #78362a;
+    border-width: 3px;
+}
+
+.file2__k2 {
+    visibility: hidden;
+
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 230, 0);
+    border-style: solid;
+    border-color: #717215;
+    border-width: 3px;
+}
+
+.file2__k3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(64, 255, 0);
+    border-style: solid;
+    border-color: #3d9535;
+    border-width: 3px;
+}
+
+/* FILE 3 */
+.file3__wrapper {
+    position: relative;
+}
+
+.block {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  margin-right: 10px;
+}
+
+.block1 {
+  border-top: 3px dotted red;
+  border-right: 3px solid blue;
+  border-bottom: 3px double green;
+  border-left: 3px dashed yellow;
+  z-index: 30;
+  top: 50;
+  left: 50;
+}
+
+.block2 {
+  background-image: url(../images/world_bg.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-color: #FFFE00;
+  z-index: 20;
+  top: 50px;
+  left: 50px;
+}
+
+.block3 {
+  background-color: #108aa2;
+  z-index: 10;
+  top: 100px;
+  left: 100px;
+}
+
+
+/* FILE 4 */
+.images_hover img{
+    opacity: 0.3;
+}
+.images_hover img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+/* FILE 5 */
+.file5__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.field_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    width: 610px;
+    height: 610px;
+}
+
+.field{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #7bffa753;
+    width: 200px;
+    height: 200px;
+}
+
+/* FILE 6 */
+table, td, th{
+    border: 24px solid rgb(255, 130, 130);
+    border-collapse: collapse;
+}
+
+.table_file6 {
+    background-color: #ffffff;
+}
+
+.table_file6 tr{
+    text-align: left
+}
+
+.table_file6 .photo_table td{
+    width: 170px;
+    border-bottom: 0px;
+}
+
+/* FILE 7 */
+.file7 ul{
+    padding-inline-start: 50px;
+}
+
+.element1 {
+    list-style-type: circle;
+}
+.element2 {
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+.element3 {
+    list-style-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/rocket.svg);
+}
+
+
+/* FILE 8 */
+.layer {
+    background-color: yellow;
+    border: 1px solid #009933;
+    color: blue;
+
+    padding: 10px;
+    
+    width: 200px;
+    height: 200px;
+    
+    clip: rect(40px, auto, auto, 40px);
+}
+
+/* FILE 9 */
+.file9_block {
+    width: 500px;
+    height: 500px;
+}
+
+.images{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    overflow: scroll;
+}

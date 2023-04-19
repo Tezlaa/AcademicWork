@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrevUA | Sing Up</title>
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- STATIC FILES -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="wrapper_header">
+                <div class="logo_header">
+                    <a href="index.html"><img src="static/images/logo.jpg" alt=""></a>
+                </div>
+                <ul class="header_nav">
+                    <li class="header_item">
+                        <a href="resume.html" class="header_link">Резюме</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="style_CSS.html" class="header_link">Стилі CSS</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#" class="header_link">Подорожі</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="interview.html" class="header_link">Опитування</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="sing_up.html" class="header_link">Реєстрація</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="welcome_text">
+        <div class="intro">
+            <div class="wrapper">
+                <h1 class="title">
+                    Опитування
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="interview">
+        <form action="/form_submit" method="get">
+            <div class="interview_wrapp">
+                <div class="favorit_cuntry">
+                    <h4>Яким країнам надаете перевагу</h4>
+                    <table>
+                        <tr>
+                            <td>Україна</td>
+                            <td><input type="checkbox" name="UK" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>Німеччина</td>
+                            <td><input type="checkbox" name="GE" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>Польша</td>
+                            <td><input type="checkbox" name="PL" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>Нідерланди</td>
+                            <td><input type="checkbox" name="NL" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>Франція</td>
+                            <td><input type="checkbox" name="FL" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>США</td>
+                            <td><input type="checkbox" name="America" id=""></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="address">
+                    <h4>Адреса</h4>
+                    <div class="text_address_field">
+                        Ім'я:
+                        <input type="text" name="Name">
+                    </div>
+                    <div class="text_address_field">
+                        Прізвище:
+                        <input type="text" name="Last_name">
+                    </div>
+                    <div class="text_address_field">
+                        Вік:
+                        <input type="number" name="age">
+                    </div>
+                    <div class="text_address_field">
+                        eMail:
+                        <input type="email" name="email">
+                    </div>
+                    <div class="text_address_field">
+                        Місто:
+                        <select name="city" id="">
+                            <option value="KV">Київ</option>
+                            <option value="HK">Харків</option>
+                            <option value="DN">Дніпро</option>
+                            <option value="OD">Одеса</option>
+                            <option value="DO">Донецьк</option>
+                            <option value="ZP">Запоріжжя</option>
+                            <option value="LV">Львів</option>
+                            <option value="KR">Кривий Ріг</option>
+                            <option value="MV">Миколаїв</option>
+                            <option value="ML">Маріуполь</option>
+                            <option value="LK">Луганськ</option>
+                            <option value="MA">Макіївка</option>
+                            <option value="BN">Вінниця</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="type_payment">
+                    <h4>Тип платежу</h4>
+                    <table>
+                        <tr>
+                            <td><input type="radio" name="type_payment" id=""></td>
+                            <td>Готівкою</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="type_payment" id=""></td>
+                            <td>Чеком</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="type_payment" id=""></td>
+                            <td>Дебітною карткою</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <th style="border: 0px; font-size: 15px;">Кредитною карткою</th>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="type_payment" id=""></td>
+                            <td>MasterCard</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="type_payment" id=""></td>
+                            <td>Visa</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="type_payment" id=""></td>
+                            <td>Discovery</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="type_payment" id=""></td>
+                            <td>American Express</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="wrapper_button">
+                <div class="reset_form_interview">
+                    <button type="reset">Очистити форму</button>
+                </div>
+                <div class="sumbit_form_interview">
+                    <button type="submit">Отправить</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
