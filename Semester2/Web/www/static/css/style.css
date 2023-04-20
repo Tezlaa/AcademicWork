@@ -472,3 +472,66 @@ footer{
     border-spacing: 5px 0.75rem;
 }
 /* end style interview.html */
+
+
+
+
+
+/* Layer style start */
+.layer_wrapper {
+  position: relative;
+}
+
+.image-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  background-image: url('../images/world_bg.png');
+}
+
+.text-layer {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  height: 50px;
+  background-color: #383838;
+  color: #ffffff;
+
+  padding: 20px;
+}
+
+.text-layer {
+  position: relative;
+}
+
+.image-layer {
+  position: absolute;
+  left: 0;
+}
+
+.image-layer {
+  z-index: 1;
+}
+
+.text-layer {
+  z-index: 2;
+}
+
+/* встановлення фонового зображення для текстового шару */
+
+.text-layer {
+  background-image: url('background.jpg');
+}
+/* layer style end */
+
+
+
+/* MAP style start */
+.map{
+    display: flex;
+    justify-content: center;
+}
+
+/* MAP style end */
