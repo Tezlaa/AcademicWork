@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrevUA</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- STATIC FILES -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header class="header" style="background-color: #9a9a9a; position: static;">
+        <div class="wrapper">
+            <div class="wrapper_header">
+                <div class="logo_header">
+                    <a href="#"><img src="static/images/logo.jpg" alt=""></a>
+                </div>
+                <ul class="header_nav">
+                    <li class="header_item">
+                        <a href="resume.html" class="header_link">Резюме</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="calculator.html" class="header_link">Калькулятор</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="style_CSS.html" class="header_link">Стилі CSS</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="layer.html" class="header_link">Шари</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="interview.html" class="header_link">Опитування</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="sing_up.html" class="header_link">Реєстрація</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+	<br><br>
+	<main class="wrapper">
+		<div class="wrapper-calculate">
+			<img class="main-image" src="/static/images/images_calculate.png" alt="">
+			<div class="table-calculate">
+				<div class="table-set-params">
+					<table>
+						<caption>Обчислення площі сегмента та бічної поверхні прямого кругового конуса</caption>
+						<thead>
+							<tr>
+								<th>Назва параметра</th>
+								<th>Умовне позначення</th>
+								<th>Ввод</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr scope="row">
+								<td>Радіус</td>
+								<td class="symbol">r</td>
+								<td><input type="number" id="radius"></td>
+							</tr>
+							<tr scope="row">
+								<td>Довжину хорди</td>
+								<td class="symbol">φ</td>
+								<td><input type="number" id="chord"></td>
+							</tr>
+							<tr scope="row">
+								<td>Висоту</td>
+								<td class="symbol">h</td>
+								<td><input type="number" id="height"></td>
+							</tr>
+						</tbody>
+					</table>					
+				</div>
+				<button onclick="calculate()">Обчислити</button><br><br>
+				<div class="table-result">
+					<table>
+						<caption>Результат</caption>
+						<thead>
+							<tr>
+								<th>Назва параметра</th>
+								<th>Умовне позначення, формула</th>
+								<th>Результат</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr scope="row">
+								<td>Площа сегмента</td>
+								<td><img src="/static/images/formula-1.png" alt=""></td>
+								<td><input type="text" id="segmentArea" readonly></td>
+							</tr>
+							<tr scope="row">
+								<td>Бічна поверхня прямого<br> кругового конуса</td>
+								<td><img src="/static/images/formula-2.png" alt=""></td>
+								<td><input type="text" id="coneSurfaceArea" readonly></td>
+							</tr>
+						</tbody>
+					</table>		
+				</div>
+			</div>
+		</div>
+	</main>
+	<script>
+		function calculate() {
+			 // Отримання значень введених користувачем
+			var r = parseFloat(document.getElementById("radius").value);
+			var chord = parseFloat(document.getElementById("chord").value);
+			var h = parseFloat(document.getElementById("height").value);
+			
+			if (r < 0){
+				alert('Радіус меньше нуля!')
+				return
+			}else if (chord < 0){
+				alert('Хорда меньше нуля!')
+				return
+			}else if (h < 0){
+				alert('Висота меньше нуля!')
+				return
+			}
+
+			var segmentArea = Math.pow(r, 2) * (chord - Math.sin(chord)) / 2;
+			var coneSurfaceArea = Math.PI * r * Math.sqrt(Math.pow(r, 2) + Math.pow(h, 2));
+
+			if (segmentArea < 0 || coneSurfaceArea < 0) {
+				alert('Результат меньше нуля!');
+				return
+			} else if (isNaN(segmentArea) || isNaN(coneSurfaceArea)){
+				alert('Виникла помилка!');
+				return
+			}
+
+			// Виведення результатів 
+			document.getElementById("segmentArea").value = segmentArea.toFixed(2);
+			document.getElementById("coneSurfaceArea").value = coneSurfaceArea.toFixed(2);
+		}
+	</script>
+</body>
+</html>

@@ -2,7 +2,7 @@ from collections import namedtuple
 from typing import Tuple, List
 
 
-def split_on_two_team(text: List[str]) -> Tuple[dict]:
+def split_on_two_team(text: List[str]) -> Tuple[dict, dict]:
     """split on two tuple
 
     Args:
@@ -11,17 +11,17 @@ def split_on_two_team(text: List[str]) -> Tuple[dict]:
     Returns:
         Tuple[dict]: tuple with result dict
     """
-    first_team = {'name': user_info[0],
-                  'scored': user_info[1],
+    first_team = {'name': text[0],
+                  'scored': text[1],
                   'win': 0, 'draw': 0, 'lose': 0, 'score': 0}
-    second_team = {'name': user_info[2],
-                   'scored': user_info[3],
+    second_team = {'name': text[2],
+                   'scored': text[3],
                    'win': 0, 'draw': 0, 'lose': 0, 'score': 0}
 
     return first_team, second_team
 
 
-def set_scored(first_team: dict, second_team: dict) -> Tuple[dict]:
+def set_scored(first_team: dict, second_team: dict) -> Tuple[dict, dict]:
     """calculate score
         if scored first team = scored second team:
             for first_team in 'draw' and 'score' +1

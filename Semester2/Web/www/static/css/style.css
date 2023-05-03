@@ -518,13 +518,13 @@ footer{
 .text-layer {
   z-index: 2;
 }
-
-/* встановлення фонового зображення для текстового шару */
-
 .text-layer {
   background-image: url('background.jpg');
 }
 /* layer style end */
+
+
+
 
 
 
@@ -535,3 +535,62 @@ footer{
 }
 
 /* MAP style end */
+
+
+
+
+
+
+
+/* CALCULATE style start */
+
+.main-image{
+    margin-right: 20px;
+    width: 192px;
+    height: 230px;
+}
+
+.wrapper-calculate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.table-calculate {
+    display: block;
+    text-align: center;
+}
+
+.table-calculate input {
+    height: 30px;
+    font-size: 20px;
+    width: 110px;
+}
+
+.table-calculate table, td, th{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.table-calculate th{
+    background-color: #f4f4f4;
+}
+
+.symbol {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.table-calculate caption {
+    font-style: italic;
+}
+
+.table-calculate img {
+    width: 200px;
+}
+
+.table-result input {
+    height: 58px;
+}
+
+/* CALCULATE style end */
