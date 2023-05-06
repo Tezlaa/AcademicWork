@@ -567,7 +567,9 @@ footer{
     width: 110px;
 }
 
-.table-calculate table, td, th{
+.table-calculate table,
+ .table-calculate td,
+  .table-calculate th{
     border: 1px solid;
     border-collapse: collapse;
 }
