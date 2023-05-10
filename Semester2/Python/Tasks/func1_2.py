@@ -14,7 +14,7 @@ def Z(x: List[int], i: int) -> float:
     Returns:
         float: result before calculate
     """
-    return (sin(1)**2 * x[i] + 1) / cos(x[i])**2 + 1
+    return (sin(x[i]) - 1) / cos(x[i])**2 + 1
 
 
 if __name__ == "__main__":
