@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrevUA</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- STATIC FILES -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header class="header" style="background-color: #9a9a9a; position: static;">
+        <div class="wrapper">
+            <div class="wrapper_header">
+                <div class="logo_header">
+                    <a href="index.html"><img src="static/images/logo.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+	<br><br>
+	<main class="wrapper">
+		<div class="wrapper-calculate">
+            <div>
+                <h1 id="hello_message"></h1>
+                <br><br>
+                <form>
+                    <label for="x_max">Максимальне значення x:</label>
+                    <input type="number" id="x_max" name="x_max">
+                
+                    <br><br>
+                
+                    <label for="x_min">Мінімальне значення x:</label>
+                    <input type="number" id="x_min" name="x_min">
+                    
+                    <br><br>
+                    
+                    <label for="z_max">Максимальне значення z:</label>
+                    <input type="number" id="z_max" name="z_max">
+                    
+                    <br><br>
+                    
+                    <label for="z_min">Мінімальне значення z:</label>
+                    <input type="number" id="z_min" name="z_min">
+                    
+                    <br><br>
+                    
+                    <label for="step">Значення кроку:</label>
+                    <input type="number" id="step" name="step">
+                    
+                    <br><br>
+                    
+                    <input type="radio" id="newWindow" name="resultFormat" value="newWindow" checked>
+                    <label for="newWindow">У новому вікні</label>
+                    
+                    <br>
+                    
+                    <input type="radio" id="samePage" name="resultFormat" value="samePage">
+                    <label for="samePage">На тій самій сторінці</label>
+                    
+                    <br>
+                    
+                    <input type="radio" id="alert" name="resultFormat" value="alert">
+                    <label for="alert">Alert</label>
+                    
+                    <br><br>
+                    
+                    <input type="button" value="Розрахувати" onclick="calculate()">
+            </div>
+            <div id="result"></div>
+        </div>
+	</main>
+    <script src="static/js/scriptlab8.js"></script>
+</body>
+</html>
