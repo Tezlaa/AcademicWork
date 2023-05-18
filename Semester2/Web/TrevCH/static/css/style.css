@@ -1,0 +1,172 @@
+body {
+    /* font setup */
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: white;
+
+    background-color: #313131;
+}
+
+.wrapper{
+    min-height: 100%;
+    max-width: 1476px;
+    margin: 0 auto;
+}
+
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* HEADER */
+header{
+    background-color: #3E3E3E;
+    padding: 15px;
+}
+
+header .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header__logo{
+    padding-top: 5px;
+}
+/* HEADER END */
+
+
+
+
+
+/* FOOTER */
+footer{
+    margin-top: auto;
+}
+
+.back__footer .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 145px;
+}
+
+.back__footer{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 33px;
+}
+
+.footer__social .icon{
+    padding-top: 14px;
+}
+
+.icon{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.creator__tag {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 33px;
+}
+
+.footer__creator{
+    text-align: right;
+}
+
+.footer__creator .icon {
+    padding-top: 14px;
+    display: flex;
+    justify-content: end;
+}
+
+.icon div{
+    margin-right: 26px;
+}
+
+.icon div:last-child{
+    margin-right: 0px;
+}
+/* FOOTER END */
+
+
+
+
+
+/* BACKGROUND */
+.back__header{
+    height: 736px;
+    background: url(../images/background/back-up.png) repeat-x top;
+}
+
+.back__footer{
+    height: 299px;
+    background: url(../images/background/back-down.png) repeat-x bottom;
+}
+/* BACKGROUND END*/
+
+
+
+
+
+
+/* CONTENT */
+
+/* LOGO */
+
+.logo_text_wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 142px;
+}
+
+.translate_text_wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 21px;
+}
+
+
+.first_part{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 85px;
+}
+
+.second_part{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 70px;
+    line-height: 85px;
+
+    padding-top: 12px;
+}
+
+.translate_text{
+    font-style: italic;
+    font-weight: 100;
+    font-size: 33px;
+    line-height: 40px;
+    font-feature-settings: 'cv03' on;
+    
+    color: rgba(255, 255, 255, 0.33);    
+}
+
+/* LOGO END */
+
+
+/* CONTENT END */
