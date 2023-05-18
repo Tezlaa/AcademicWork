@@ -30,7 +30,7 @@ if __name__ == "__main__":
     list_for_test = [
         {
             'list': [1, [2, 3], 4],
-            'depth': 1
+            'depth': 0
         },
         {
             'list': [1, [2, [3]], 4],

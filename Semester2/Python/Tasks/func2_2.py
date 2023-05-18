@@ -31,25 +31,15 @@ def valid_classes(pair_for_check: List[str], data: dict) -> bool:
     
 
 def split_classes(input_classes: str) -> Dict[str, List[str]]:
-    """split of need structures,
-       where the key is parent and the values his cildren
-
-    Args:
-        input_classes (str): user text
-
-    Returns:
-        Dict[str, List[str]]: result dict
-    """
-    
     split = input_classes.split(' : ')
     
     if len(split) < 2:
-        return {input_classes: []}
+        return {input_classes: ['obj']}
     
     parent = split[0]
-    child = split[1].split(' ')
+    children = split[1].split(' ')
     
-    return {parent: child}
+    return {parent: children}
 
 
 if __name__ == "__main__":
