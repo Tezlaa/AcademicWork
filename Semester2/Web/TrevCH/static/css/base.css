@@ -1,6 +1,6 @@
 body {
     /* font setup */
-    font-family: 'Inter';
+    font-family: 'Inter Tight', sans-serif;
     font-style: italic;
     font-weight: 300;
     font-size: 18px;
@@ -18,7 +18,7 @@ body {
 }
 
 .page{
-    overflow: hidden;
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -30,6 +30,12 @@ body {
 header{
     background-color: #3E3E3E;
     padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    height: 53px;
 }
 
 header .wrapper{
@@ -41,6 +47,80 @@ header .wrapper{
 .header__logo{
     padding-top: 5px;
 }
+
+#myImage {
+    transition: opacity 0.5s ease;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+nav {
+    min-height: 100%;
+    max-width: 1476px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: end;
+    padding-top: 33px;
+}
+
+
+.nav{
+    width: 375px;
+    height: 464px;
+    
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.25));
+    z-index:99999999; 
+    
+    background: #3E3E3E;
+    border-radius: 13px;
+}
+
+.text-nav{
+    display: grid;
+    text-align: center;
+}
+
+.text-nav a {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 29px;
+    line-height: 35px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    text-decoration: none;
+
+    padding: 10px;
+}
+
+.text-nav .map-site {
+    padding-top: 15px;
+}
+
+.text-nav .map-site a{
+    font-style: italic;
+    font-weight: 100;
+    font-size: 29px;
+    line-height: 35px;
+    text-align: center;
+    
+    color: #ffffffd6;  
+}
+
+.text-nav .glory-to-Ukraine {
+    padding-top: 10px;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 22px;  
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
 /* HEADER END */
 
 
@@ -56,7 +136,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 145px;
+    align-items: end;
 }
 
 .back__footer{
@@ -68,6 +148,7 @@ footer{
 
 .footer__social .icon{
     padding-top: 14px;
+    padding-bottom: 39px;
 }
 
 .icon{
@@ -78,7 +159,7 @@ footer{
 
 .creator__tag {
     font-style: italic;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 27px;
     line-height: 33px;
 }
@@ -108,7 +189,7 @@ footer{
 
 /* BACKGROUND */
 .back__header{
-    height: 736px;
+    height: 822px;
     background: url(../images/background/back-up.png) repeat-x top;
 }
 
@@ -117,56 +198,3 @@ footer{
     background: url(../images/background/back-down.png) repeat-x bottom;
 }
 /* BACKGROUND END*/
-
-
-
-
-
-
-/* CONTENT */
-
-/* LOGO */
-
-.logo_text_wrapper{
-    display: flex;
-    justify-content: center;
-    padding-top: 142px;
-}
-
-.translate_text_wrapper{
-    display: flex;
-    justify-content: center;
-    padding-top: 21px;
-}
-
-
-.first_part{
-    font-style: normal;
-    font-weight: 300;
-    font-size: 70px;
-    line-height: 85px;
-}
-
-.second_part{
-    font-style: normal;
-    font-weight: 100;
-    font-size: 70px;
-    line-height: 85px;
-
-    padding-top: 12px;
-}
-
-.translate_text{
-    font-style: italic;
-    font-weight: 100;
-    font-size: 33px;
-    line-height: 40px;
-    font-feature-settings: 'cv03' on;
-    
-    color: rgba(255, 255, 255, 0.33);    
-}
-
-/* LOGO END */
-
-
-/* CONTENT END */
