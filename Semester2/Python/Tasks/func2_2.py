@@ -34,7 +34,7 @@ def split_classes(input_classes: str) -> Dict[str, List[str]]:
     split = input_classes.split(' : ')
     
     if len(split) < 2:
-        return {input_classes: ['obj']}
+        return {input_classes: []}
     
     parent = split[0]
     children = split[1].split(' ')
