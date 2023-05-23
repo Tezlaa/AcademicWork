@@ -1,0 +1,33 @@
+/* BACKGROUND SETTING */
+
+.back__header {
+    position: relative;
+    top: -291px;
+}
+
+.content{
+    position: relative;
+    top: -329px;
+}
+
+
+/* BACKGROUND SETTING END */
+
+/* TITLE */
+
+.title {
+    display: flex;
+    padding-top: 473px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 54px;
+    line-height: 65px;
+}
+
+
+/* TITLE */

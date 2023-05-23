@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrevCH</title>
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <!-- links -->
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/photoGallery.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="wrapper">
+                <div class="header__logo">
+                    <a href="/" class="header__logo_link">
+                        <img src="static/images/background/TrevCH-logo.png" alt="">
+                    </a>
+                </div>
+                <div onclick="changeImage()">
+                    <img id="myImage" src="static/images/background/select_menu.png" alt="">
+                </div>
+            </div>
+            <nav style="display: none;" id="navMenu">
+                <div class="nav">
+                    <div class="text-nav">
+                        <a href="index.html">Головна сторінка</a>
+                        <br>
+                        <a href="prominentCity.html">Видатні міста України</a>
+                        <a href="photoGallery.html">Фотогалерея</a>
+                        <a href="TravelArticle.html">Статті про подорожі</a>
+                        <a href="UkraineHistory.html">Історія України</a>
+                        <a href="holidays.html">Державні свята</a>
+                        <br>
+                        <span class="map-site"><a href="">Карта сайту</a></span>
+                        <span class="glory-to-Ukraine">Слава України</span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="back__header">
+                <div class="title">
+                    <h1>
+                        Фотогалерея
+                    </h1>
+                </div>
+            </section>
+            <section class="content">
+                <div class="wrapper">
+                    <div class="selector_city">
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="back__footer">
+            <div class="wrapper">
+                <div class="footer__social">
+                    Ми у соцмережах:
+                    <div class="icon">
+                        <div>
+                            <a href=""><img src="static/images/footer/Instagram_white.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="static/images/footer/Telegram_white.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="static/images/footer/Twitter_white.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__creator">
+                    Сайт створено:
+                    <div class="icon">
+                        <div>
+                            <a target="_blank" href="https://t.me/TTezla">
+                                <img src="static/images/footer/Telegram_white.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a target="_blank" href="https://github.com/Tezlaa">
+                                <img src="static/images/footer/Github_white.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <span class="creator__tag">©Tishenko Bogdan</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
