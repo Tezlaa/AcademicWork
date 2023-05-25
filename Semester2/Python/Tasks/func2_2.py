@@ -15,11 +15,17 @@ def valid_classes(pair_for_check: List[str], data: dict) -> bool:
         bool: True if the parent is the parent of the child
     """
     parent = pair_for_check[0]
-    child = pair_for_check[1]
+    
+    try:
+        child = pair_for_check[1]
+    except IndexError:
+        return valid_classes([parent, parent], data)
     
     if parent == child:
-        return True
-    
+        if data.get(child):
+            return True
+        return False
+        
     try:
         for ancestor in data[child]:
             if valid_classes([parent, ancestor], data):
@@ -34,7 +40,7 @@ def split_classes(input_classes: str) -> Dict[str, List[str]]:
     split = input_classes.split(' : ')
     
     if len(split) < 2:
-        return {input_classes: []}
+        return {input_classes: ['Obj']}
     
     parent = split[0]
     children = split[1].split(' ')
