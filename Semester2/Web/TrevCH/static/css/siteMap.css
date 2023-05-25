@@ -1,0 +1,32 @@
+/* HEADER */
+.back__header {
+    height: 550px;
+    background: url(../images/article/background-up.png) repeat-x top;
+}
+
+.title_sitemap {
+    display: flex;
+    justify-content: center;
+    padding-top: 192px;
+}
+
+.title_sitemap h1{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 54px;
+    line-height: 65px;
+    
+    color: #FFFFFF; 
+}
+
+/* HEADER END */
+
+
+/* CONTENT */
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTENT END */
