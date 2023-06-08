@@ -6,6 +6,10 @@ WHITE = '\x1b[37m'
 
 
 def benchmark(func):
+    """ Banchmark decorator
+        Wrapp your function or method if you need to check his running time
+    """
+    
     def wrapper(*args, **kwarks):
         start_time = time.time()
         
