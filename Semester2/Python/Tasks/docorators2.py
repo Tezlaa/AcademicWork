@@ -14,6 +14,19 @@ def remember(func):
     cache = {'args': None, 'kwargs': None, 'result': None}
     
     def wrapper(*args, **kwargs):
+        """
+        Checks if the function has been called with the same arguments before.
+        If yes, it returns the cached result; otherwise, it computes the result,
+        caches it, and returns it.
+
+        Args:
+            *args: Positional arguments passed to the function.
+            **kwargs: Keyword arguments passed to the function.
+
+        Returns:
+            The result of the function.
+        """
+        
         if (args, kwargs) != (cache['args'], cache['kwargs']):
             cache['args'], cache['kwargs'] = args, kwargs
             cache['result'] = func(*args, **kwargs)

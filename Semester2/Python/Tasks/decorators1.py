@@ -11,6 +11,17 @@ def benchmark(func):
     """
     
     def wrapper(*args, **kwarks):
+        """
+        Wrapper function for benchmarking.
+        
+        Args:
+            *args: Positional arguments passed to the function.
+            **kwargs: Keyword arguments passed to the function.
+
+        Returns:
+            The result of the function.
+        """
+        
         start_time = time.time()
         
         result = func(*args, **kwarks)
@@ -22,7 +33,14 @@ def benchmark(func):
 
 @benchmark
 def test_func(start_iter: int, stop_iter: int):
-    """ Test func """
+    """ Test func 
+    This function performs a loop from the start_iter to the stop_iter values.
+    It is used to demonstrate the benchmark decorator.
+    
+    Args:
+        start_iter (int): The starting number of the loop.
+        stop_iter (int): The ending number of the loop.
+    """
     for _ in range(start_iter, stop_iter):
         pass
     
