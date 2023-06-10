@@ -7,11 +7,10 @@ def fibonacci():
     Yields:
         int: The next Fibonacci number in the sequence.
     """
-    number_start, number_end = 0, 1
+    number_start, number_end = 1, 1
     while True:
         yield number_start
-        number_start = number_end
-        number_end = number_start + number_end
+        number_start, number_end = number_end, number_start + number_end
 
 
 if __name__ == "__main__":
