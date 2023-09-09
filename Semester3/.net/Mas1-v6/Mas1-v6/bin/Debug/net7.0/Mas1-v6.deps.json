@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Mas1-v6/1.0.0": {
+        "runtime": {
+          "Mas1-v6.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mas1-v6/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

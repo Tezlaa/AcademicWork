@@ -1,0 +1,14 @@
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\bin\Debug\net7.0\Mas1-v6.exe
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\bin\Debug\net7.0\Mas1-v6.deps.json
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\bin\Debug\net7.0\Mas1-v6.runtimeconfig.json
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\bin\Debug\net7.0\Mas1-v6.dll
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\bin\Debug\net7.0\Mas1-v6.pdb
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\obj\Debug\net7.0\Mas1-v6.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\obj\Debug\net7.0\Mas1-v6.AssemblyInfoInputs.cache
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\obj\Debug\net7.0\Mas1-v6.AssemblyInfo.cs
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\obj\Debug\net7.0\Mas1-v6.csproj.CoreCompileInputs.cache
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\obj\Debug\net7.0\Mas1-v6.dll
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\obj\Debug\net7.0\refint\Mas1-v6.dll
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\obj\Debug\net7.0\Mas1-v6.pdb
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\obj\Debug\net7.0\Mas1-v6.genruntimeconfig.cache
+D:\Developments\КНУ\AcademicWorkPrograming\Semester3\.net\Mas1-v6\Mas1-v6\obj\Debug\net7.0\ref\Mas1-v6.dll
