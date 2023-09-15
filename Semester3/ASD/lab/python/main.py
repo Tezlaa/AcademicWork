@@ -8,7 +8,7 @@ from base import Sort
 if __name__ == "__main__":
     file_name = 'ResultLab1.xlsx'
     
-    bubble = BubbleSort('D', 3)
+    bubble = BubbleSort('D', 8)
     counting = CountingSort('D', 26)
     merge = MergeSort('D', 49)
     
