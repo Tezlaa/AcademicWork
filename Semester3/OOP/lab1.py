@@ -75,7 +75,7 @@ class WindowSettings():
             self.issue_message = f'Set correct {atr} size. \nMin: {side_min} Max: {side_max}'
         
         return getattr(self, atr)
-        
+
 
 class BaseOptions(WindowSettings):
     def open_window(self):
@@ -151,11 +151,13 @@ class Window(BaseOptions):
     
     def __change_size(self, setter) -> None:
         print('Write size')
+        
         size = int(input('\n\n>>> '))
         setter(size)
 
     def __change_color(self, setter) -> None:
         print('Select number color:')
+        
         colors = self.get_colors()
         
         while True:
