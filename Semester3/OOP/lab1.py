@@ -89,10 +89,10 @@ class BaseOptions(WindowSettings):
         self._is_visible = False
         self._draw()
     
-    def close(self):
+    def close(self) -> None:
         os._exit(1)
         
-    def clear(self):
+    def clear(self) -> None:
         os.system('cls')
         
     def _draw(self) -> None:
