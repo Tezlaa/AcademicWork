@@ -180,23 +180,24 @@ if __name__ == "__main__":
             \nshow | hide | close | title | title color | border | border color | position | height | width\
                 \n\n>>> ").lower()
         
-        if command == "show":
-            window.show()
-        elif command == "hide":
-            window.hide()
-        elif command == "title":
-            window.change_title()
-        elif command == "title color":
-            window.change_title_color()
-        elif command == "border":
-            window.change_border_size()
-        elif command == "border color":
-            window.change_border_color()
-        elif command == "position":
-            window.change_position()
-        elif command == "height":
-            window.change_height()
-        elif command == "width":
-            window.change_width()
-        elif command == "close":
-            window.close()
+        match command:
+            case "show":
+                window.show()
+            case "hide":
+                window.hide()
+            case "title":
+                window.change_title()
+            case "title color":
+                window.change_title_color()
+            case "border":
+                window.change_border_size()
+            case "border color":
+                window.change_border_color()
+            case "position":
+                window.change_position()
+            case "height":
+                window.change_height()
+            case "width":
+                window.change_width()
+            case "close":
+                window.close()
