@@ -10,11 +10,11 @@ class BubbleSort(AlgorithmBase):
         # to go through the entire process
         swapped = False
         # Traverse through all array elements
-        for i in range(n-1):
+        for i in range(n - 1):
             # range(n) also work but outer loop will
             # repeat one time more than needed.
             # Last i elements are already in place
-            for j in range(0, n-i-1):
+            for j in range(0, n - i - 1):
             
                 # traverse the array from 0 to n-i-1
                 # Swap if the element found is greater
@@ -28,3 +28,4 @@ class BubbleSort(AlgorithmBase):
                 # can just exit the main loop.
                 return array
         return array
+
