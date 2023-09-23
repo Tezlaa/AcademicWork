@@ -1,0 +1,14 @@
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\bin\Debug\net7.0\farming.exe
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\bin\Debug\net7.0\farming.deps.json
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\bin\Debug\net7.0\farming.runtimeconfig.json
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\bin\Debug\net7.0\farming.dll
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\bin\Debug\net7.0\farming.pdb
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\obj\Debug\net7.0\farming.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\obj\Debug\net7.0\farming.AssemblyInfoInputs.cache
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\obj\Debug\net7.0\farming.AssemblyInfo.cs
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\obj\Debug\net7.0\farming.csproj.CoreCompileInputs.cache
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\obj\Debug\net7.0\farming.dll
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\obj\Debug\net7.0\refint\farming.dll
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\obj\Debug\net7.0\farming.pdb
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\obj\Debug\net7.0\farming.genruntimeconfig.cache
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class1\farming\farming\obj\Debug\net7.0\ref\farming.dll
