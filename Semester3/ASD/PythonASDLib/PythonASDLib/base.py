@@ -67,7 +67,7 @@ class AlgorithmBase(ExcelActions):
         length_array = self.get_length_array()
         array = self.create_array(length_array)
         time = self._banchmark_algorithm(array)
-        time_str = f'{(time):.5f}'
+        time_str = f'{(time):.6f}'
         
         self.__show_info(length_array, time_str)
         self.set_time(time_str)
@@ -94,7 +94,7 @@ class AlgorithmBase(ExcelActions):
         return time.perf_counter() - time_start
     
     
-class Sort:
+class StartAlgorithmics:
     def __init__(self, algorithms: list[AlgorithmBase], file_name: str) -> None:
         for algorithm in algorithms:
             algorithm.connect_table(file_name)

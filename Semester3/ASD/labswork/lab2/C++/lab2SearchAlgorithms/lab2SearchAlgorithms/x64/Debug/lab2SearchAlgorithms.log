@@ -1,0 +1,3 @@
+﻿  lab2SearchAlgorithms.cpp
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\ASD\labswork\lab2\C++\lab2SearchAlgorithms\lab2SearchAlgorithms\lab2SearchAlgorithms.cpp(125,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  lab2SearchAlgorithms.vcxproj -> D:\Developments\KNU\AcademicWorkPrograming\Semester3\ASD\labswork\lab2\C++\lab2SearchAlgorithms\x64\Debug\lab2SearchAlgorithms.exe
