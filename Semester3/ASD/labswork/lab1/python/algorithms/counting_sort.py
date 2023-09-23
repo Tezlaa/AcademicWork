@@ -1,4 +1,4 @@
-from base import AlgorithmBase
+from PythonASDLib.base import AlgorithmBase
 
 
 class CountingSort(AlgorithmBase):

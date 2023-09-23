@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PythonASDLib
+Version: 1.0.0
+Summary: Package for algorithmics
+Author: Tezla
+Author-email: Bogdantihenko60@email.com
+Requires-Dist: openpyxl
+Requires-Dist: colorama
