@@ -8,8 +8,10 @@ namespace farming;
 
 public class Farmer : Validations
 {
-    private Plant currentPlant;
     public event EventHandler<PlantGrownEventArgs> PlantGrown;
+
+    Farm _subscribeFarm;
+    Plant _subscribePlant;
 
     string _firstName;
     string _lastName;
@@ -56,23 +58,29 @@ public class Farmer : Validations
         Specialzation = specialzation;
     }
 
-    public void AssignPlant(Plant plant)
+    public void subscribeOnGrowing(Farm farm, Plant plant)
     {
-        if (currentPlant != null)
-        {
-            currentPlant.PlantGrown -= HandlePlantGrown;
-            currentPlant.StopGrowing();
-        }
+        _subscribeFarm = farm;
 
-        currentPlant = plant;
-        currentPlant.PlantGrown += HandlePlantGrown;
-        currentPlant.StartGrowing();
+        _subscribePlant = farm.PlantsOnGrowing.Find(growingPlant => growingPlant == plant);
+        ValidateNull(_subscribePlant);
+
+        _subscribePlant.PlantGrown += HandlePlantGrown;
     }
+
+    public void unsubscribeOnGrowing()
+    {
+        _subscribePlant.PlantGrown -= HandlePlantGrown;
+    }
+
     public void HandlePlantGrown(object sender, PlantGrownEventArgs e)
     {
+        _subscribeFarm.DeletePlant(e.Plant);
+
         Console.WriteLine($"\nPlant is grown! \n{Specialzation} {FirstName} {LastName} harvested the {e.Plant.FullName}");
         if (e.Plant.IsNeedRegrow)
         {
+            _subscribeFarm.AddPlant(e.Plant);
             Console.WriteLine("Planting a new one...");
         }
 

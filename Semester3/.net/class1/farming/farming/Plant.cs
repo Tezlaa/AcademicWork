@@ -24,29 +24,33 @@ public abstract class Plant
         IsNeedRegrow = isNeedRegrow;
 
         timer = new System.Timers.Timer(GrowingTime * 1000);
-        timer.Elapsed += TimerElapsed;
-        StopGrowing();
+        timer.Stop();
     }
     public void StartGrowing()
     {
-        timer.Start();
+        if (!timer.Enabled)
+        {
+            timer.Elapsed += TimerElapsed;
+            timer.Start();
+        }
     }
 
     public void StopGrowing()
     {
-        timer.Stop();
+        if (timer.Enabled)
+        {
+            timer.Stop();
+            timer.Elapsed -= TimerElapsed;
+        }
     }
 
     private void TimerElapsed(object sender, ElapsedEventArgs e)
     {
-        OnPlantGrown();
+        PlantHasGrown();
     }
 
-    protected virtual void OnPlantGrown()
+    protected virtual void PlantHasGrown()
     {
-        if (IsNeedRegrow) StartGrowing();
-        else StopGrowing();
-
         PlantGrown?.Invoke(this, new PlantGrownEventArgs(this));
     }
 }

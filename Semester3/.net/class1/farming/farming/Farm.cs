@@ -44,6 +44,7 @@ public class Farm : Validations
         }
 
         PlantsOnGrowing.Add(plant);
+        plant.StartGrowing();
 
         return true;
     }
