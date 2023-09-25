@@ -12,3 +12,5 @@
 розсуд. Передбачити обов’язкове використання декількох конструкторів,
 полів, валідацію даних за допомогою властивостей.
 ```
+
+![screenshot](https://github.com/Tezlaa/AcademicWork/blob/main/Semester3/.net/class1/farming/farming/screenshots/Screenshot_1.png)
