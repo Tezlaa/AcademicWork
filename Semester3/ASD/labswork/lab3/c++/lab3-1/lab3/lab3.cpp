@@ -32,7 +32,7 @@ public:
     T getTopElement() {
         if (isArrayEmpty()) {
             cout << "Stack is empty!" << endl;
-            return T();  // Return a default value for the data type
+            return T();
         }
         return array[lastIndex];
     }
@@ -58,7 +58,7 @@ public:
     T pop() {
         if (isArrayEmpty()) {
             cout << "Stack is empty!" << endl;
-            return T();  // Return a default value for the data type
+            return T();
         }
         return array[lastIndex--];
     }
@@ -122,7 +122,7 @@ bool validInstance(string inctance) {
 }
 
 
-int main2() {
+int main3() {
     StackArray<char> intStack;
     intStack.add('{');
     intStack.add('{');
