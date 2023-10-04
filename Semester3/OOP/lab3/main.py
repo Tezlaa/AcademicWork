@@ -42,7 +42,7 @@ class Matrix:
 
 if __name__ == "__main__":
     matrix = Matrix()
-    matrix.load_from_file('lab3/matrix.txt')
+    matrix.load_from_file('matrix.txt')
     
     print("Matrix:")
     matrix.display()
