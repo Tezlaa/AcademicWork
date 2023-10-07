@@ -7,8 +7,7 @@ from datetime import datetime
 class FileBaseOptions:
     date_format = '%Y-%m-%d %H:%M:%S'
     
-    def __init__(self,
-                 path: str = 'autofile.txt') -> None:
+    def __init__(self, path: str = 'autofile.txt') -> None:
         file_name = path.split('/')[-1]
         
         self.path = path
