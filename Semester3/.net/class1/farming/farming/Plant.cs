@@ -26,11 +26,14 @@ public abstract class Plant
         timer = new System.Timers.Timer(GrowingTime * 1000);
         timer.Stop();
     }
+
+    public abstract bool CanHarvest();
+
     public void StartGrowing()
     {
         if (!timer.Enabled)
         {
-            timer.Elapsed += TimerElapsed;
+            timer.Elapsed += CollectionTime;
             timer.Start();
         }
     }
@@ -40,11 +43,11 @@ public abstract class Plant
         if (timer.Enabled)
         {
             timer.Stop();
-            timer.Elapsed -= TimerElapsed;
+            timer.Elapsed -= CollectionTime;
         }
     }
 
-    private void TimerElapsed(object sender, ElapsedEventArgs e)
+    private void CollectionTime(object sender, ElapsedEventArgs e)
     {
         PlantHasGrown();
     }
@@ -60,11 +63,24 @@ public class Carrot : Plant
     public Carrot() : base("Carrot", "Carrot Plant", 3, true)
     {}
 
+    public override bool CanHarvest()
+    {
+        return true;
+    }
 }
 
 public class Potato : Plant
 {
     public Potato() : base("Potato", "Potato Plant", 5, true)
     {}
+    public override bool CanHarvest()
+    {
+        Random enoughWatherForGrowing = new Random();
+        int[] neededWatherToGrowing = {1, 2, 3};
 
+        if (neededWatherToGrowing.Contains(enoughWatherForGrowing.Next(0, 6))) {
+            return true;
+        }
+        return false;
+    }
 }

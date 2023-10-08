@@ -75,6 +75,11 @@ public class Farmer : Validations
 
     public void HandlePlantGrown(object sender, PlantGrownEventArgs e)
     {
+        if (!e.Plant.CanHarvest())
+        {
+            Console.WriteLine($"\nCan`t harvest {e.Plant.FullName}. Wait a littel longer");
+            return;
+        }
         _subscribeFarm.DeletePlant(e.Plant);
 
         Console.WriteLine($"\nPlant is grown! \n{Specialzation} {FirstName} {LastName} harvested the {e.Plant.FullName}");

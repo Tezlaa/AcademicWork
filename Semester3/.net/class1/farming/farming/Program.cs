@@ -14,6 +14,7 @@ public class Program
         farm.AddPlant(potato);
 
         farmer.subscribeOnGrowing(farm, carrot);
+        farmer.subscribeOnGrowing(farm, potato);
 
         Console.ReadLine();
 
