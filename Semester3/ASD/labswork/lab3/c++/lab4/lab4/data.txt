@@ -1,0 +1,6 @@
+ASUS 500
+DELL 32000
+Kuzmenko 198
+LENOVO 16102
+Petrov 156
+Samoilev 134

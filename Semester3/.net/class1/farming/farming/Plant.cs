@@ -73,6 +73,7 @@ public class Potato : Plant
 {
     public Potato() : base("Potato", "Potato Plant", 5, true)
     {}
+
     public override bool CanHarvest()
     {
         Random enoughWatherForGrowing = new Random();

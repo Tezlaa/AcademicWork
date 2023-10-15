@@ -23,7 +23,7 @@ public class Validations
     
     public void ValidateLengthWord(string word)
     {
-        if (word.Length < 3) throw new LengthWordError(word);
+        if (word.Length < 1) throw new LengthWordError(word);
     }
 
     public void ValidateNull(object value)
