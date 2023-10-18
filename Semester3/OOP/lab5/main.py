@@ -101,6 +101,10 @@ class Array(ArrayBaseMethods):
     def array_type(self) -> type:
         return self.__array_type
     
+    @property
+    def zero_elements(self) -> int:
+        return self.__zero_elements
+    
     def __create_array(self) -> list:
         return [float('inf')] * self.size
     
@@ -140,10 +144,96 @@ class Array(ArrayBaseMethods):
         return self.__len
 
     def __str__(self) -> str:
-        array = self.__get_clear_array()        
-        return f'|| {" | ".join(array)} || type: {self.__str_array_type}'
+        array = self.__get_clear_array()
+        return (
+            f'|| {" | ".join(map(str, array))} || '
+            f'type: {self.__str_array_type}. Zero elements: {self.zero_elements}'
+        )
+
+
+class ArrayMenu:
+    @staticmethod
+    def create_array() -> Array:
+        size = int(input("Enter the size of the array: "))
+        data_type = input("Enter the data type ('int', 'str', 'float'): ")
+        return Array(size, data_type)
+
+    @staticmethod
+    def add_element(array: Array) -> Array:
+        try:
+            index = int(input("Enter the index: "))
+            value = input(f"Enter a value of type {array.array_type.__name__}: ")
+            array[index] = array.array_type(value)
+            print(f"Element added: {array[index]}")
+        except (ValueError, IndexError, TypeError) as error:
+            print(f"Invalid input. \n{error}")
+        
+        return array
+            
+    @staticmethod
+    def get_element(array: Array) -> None:
+        try:
+            index = int(input("Enter the index: "))
+            print(f"Value at index {index}: {array[index]}")
+        except (ValueError, IndexError):
+            print("Invalid index.")
+            
+    @staticmethod
+    def display_average(array: Array) -> None:
+        if array.array_type in (str,):
+            print(f"Type {array.array_type.__name__} does not support the average method.")
+        else:
+            print(f"Average value: {array.average}")
+            
+    @staticmethod
+    def display_maximum(array: Array) -> None:
+        print(f"Maximum value: {array.max_element}")
+        
+    @staticmethod
+    def display_minimum(array: Array) -> None:
+        print(f"Minimum value: {array.min_element}")
+        
+    @staticmethod
+    def display_zero_count(array: Array) -> None:
+        print(f"Count of zero elements: {array.zero_elements}")
 
 
 if __name__ == "__main__":
-    array = Array(3, 'str')
-    
+    array = None
+
+    while True:
+        print("\n\n1. Create Array")
+        print("2. Add an element")
+        print("3. Get an element by index")
+        print("4. Display the average value")
+        print("5. Display the maximum value")
+        print("6. Display the minimum value")
+        print("7. Display the count of zero elements")
+        print("8. Display the entire array")
+        print("9. Exit")
+
+        choice = input("Choose an option: ")
+
+        match choice:
+            case "1":
+                array = ArrayMenu.create_array()
+            case _ if array is None:
+                print("\nPlease create an array first.")
+            case "2":
+                array = ArrayMenu.add_element(array)
+            case "3":
+                ArrayMenu.get_element(array)
+            case "4":
+                ArrayMenu.display_average(array)
+            case "5":
+                ArrayMenu.display_maximum(array)
+            case "6":
+                ArrayMenu.display_minimum(array)
+            case "7":
+                ArrayMenu.display_zero_count(array)
+            case "8":
+                print('\n', array)
+            case "9":
+                break
+            case _:
+                print("\nInvalid choice. Please try again.")
