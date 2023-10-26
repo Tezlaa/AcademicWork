@@ -74,7 +74,7 @@ class SampleStatistic:
 
 
 if __name__ == "__main__":
-    filename = input("Введіть ім'я файлу для завантаження вибірки: ")
+    filename = input("File name: ")
     statistics = SampleStatistic(filename)
     
     while True:
@@ -108,6 +108,6 @@ if __name__ == "__main__":
             case '6':
                 print("Average value:", statistics.mean())
             case '7':
-                statistics.variance()
+                print(statistics.variance())
             case '8':
                 print('Standard deviation: ', statistics.standard_deviation())
