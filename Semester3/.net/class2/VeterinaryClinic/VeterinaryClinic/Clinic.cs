@@ -13,7 +13,9 @@ public class Clinic
     List<Doctor> Doctors { get; }
     Dictionary<Animal, Doctor> Treatment { get; }
 
-    string _clinicName
+    string _clinicName;
+
+    public string ClinicName
     {
         set
         {
@@ -27,7 +29,7 @@ public class Clinic
     {
         Doctors = new List<Doctor>();
         Treatment = new Dictionary<Animal, Doctor>();
-        _clinicName = clinicName;
+        ClinicName = clinicName;
     }
 
     public void HireDoctor(Doctor doctor)
@@ -52,9 +54,10 @@ public class Clinic
     {
         try
         {
-            if (!CanAddAnumalToClinic())
+            if (!CanAddAnumalToClinic() || doctor.IsBusy())
             {
                 Console.WriteLine("Can`t add new animal. Come back again soon!");
+                return;
             }
 
             ChangeEmployment(doctor);
@@ -89,10 +92,26 @@ public class Clinic
         throw new ArgumentNullException($"Animal {animalName} not found");
     }
 
+    public void ShowInfo()
+    {
+        List<string> animals = new List<string>();
+        List<string> doctors = new List<string>();
+        foreach (Animal animal in Treatment.Keys)
+        {
+            animals.Add(animal.Name);
+        }
+        foreach (Doctor doctor in Doctors) 
+        {
+            doctors.Add(doctor.Info());
+        }
+
+        Console.WriteLine($"\n\nClinic: {_clinicName}\nDoctors: \n\t{String.Join("\n\t", doctors)}\nAnimal in treatmet: {String.Join(", ", animals)}");
+    }
+
     private Animal FoundByName(string name)
     {
         List<Animal> animals = new List<Animal>(Treatment.Keys);
-        var foundAnimal = animals.Find(animal => animal.GetName() == name);
+        var foundAnimal = animals.Find(animal => animal.Name == name);
         _validations.ValidateNull(foundAnimal);
 
         return foundAnimal;
@@ -101,8 +120,8 @@ public class Clinic
     private bool CanAddAnumalToClinic()
     {
         int availableDoctors = Doctors.Count(doctor => !doctor.IsBusy());
-        
-        if (availableDoctors < availableDoctors + 1)
+
+        if (availableDoctors == 0)
         {
             return false;
         }

@@ -13,41 +13,46 @@ public abstract class Animal
     {
         "Badger", "Giraffe", "Cobra", "Hawk", "Deer", "Ibex", "Jaguar",
     };
+    string _name;
+    string _description;
+    int _age;
 
-    string _name 
+    public string Name
     {
+        get { return _name; }
         set
         {
             _validations.ValidateToNormal(value);
             _validations.ValidateByList(availableName, value);
             _name = value;
         }
-        get { return _name; }
     }
-    string _description
+
+    public string Description
     {
+        get { return _description; }
         set
         {
             _validations.ValidateToNormal(value);
             _description = value;
         }
-        get { return _description; }
     }
-    int _age
+
+    public int Age
     {
+        get { return _age; }
         set
         {
             _validations.ValidateNull(value);
             _age = value;
         }
-        get { return _age; }
     }
 
     protected Animal(string name, int age, string description)
     {
-        _name = name;
-        _description = description;
-        _age = age;
+        Name = name;
+        Age = age;
+        Description = description;
     }
 
     protected Animal(string name, int age) : this(name, age, "Empty") {}
@@ -63,10 +68,4 @@ public abstract class Animal
     {
         Console.WriteLine(Sound());
     }
-
-    public string GetName()
-    {
-        return _name;
-    }
-
 }

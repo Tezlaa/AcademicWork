@@ -60,7 +60,7 @@ public class LengthWordError : Exception
 public class ElementNotFound : Exception
 {
     public ElementNotFound(List<string> list, string element)
-        : base($"Element: {element} not found in the list: {String.Join(", ", list)}")
+        : base($"Element not found in the list.")
     { }
 }
 

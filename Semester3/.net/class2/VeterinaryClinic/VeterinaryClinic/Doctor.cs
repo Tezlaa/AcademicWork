@@ -10,7 +10,11 @@ public class Doctor
 {
     Validations _validations = new Validations();
 
-    string _firstName
+    string _firstName;
+    string _lastName;
+    int _age;
+
+    public string FirstName
     {
         set
         {
@@ -19,7 +23,8 @@ public class Doctor
         }
         get { return _firstName; }
     }
-    string _lastName
+
+    public string LastName
     {
         set
         {
@@ -29,7 +34,7 @@ public class Doctor
         get { return _lastName; }
 
     }
-    int _age
+    public int Age
     {
         set
         {
@@ -42,9 +47,9 @@ public class Doctor
 
     public Doctor(string firstName, string lastName, int age)
     {
-        _firstName = firstName;
-        _lastName = lastName;
-        _age = age;
+        FirstName = firstName;
+        LastName = lastName;
+        Age = age;
     }
 
     public string Info()
