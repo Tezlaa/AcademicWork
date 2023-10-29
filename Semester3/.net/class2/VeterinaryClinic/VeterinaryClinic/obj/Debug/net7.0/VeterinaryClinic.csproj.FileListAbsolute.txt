@@ -1,0 +1,14 @@
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\bin\Debug\net7.0\VeterinaryClinic.exe
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\bin\Debug\net7.0\VeterinaryClinic.deps.json
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\bin\Debug\net7.0\VeterinaryClinic.runtimeconfig.json
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\bin\Debug\net7.0\VeterinaryClinic.dll
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\bin\Debug\net7.0\VeterinaryClinic.pdb
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\obj\Debug\net7.0\VeterinaryClinic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\obj\Debug\net7.0\VeterinaryClinic.AssemblyInfoInputs.cache
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\obj\Debug\net7.0\VeterinaryClinic.AssemblyInfo.cs
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\obj\Debug\net7.0\VeterinaryClinic.csproj.CoreCompileInputs.cache
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\obj\Debug\net7.0\VeterinaryClinic.dll
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\obj\Debug\net7.0\refint\VeterinaryClinic.dll
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\obj\Debug\net7.0\VeterinaryClinic.pdb
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\obj\Debug\net7.0\VeterinaryClinic.genruntimeconfig.cache
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\class2\VeterinaryClinic\VeterinaryClinic\obj\Debug\net7.0\ref\VeterinaryClinic.dll
