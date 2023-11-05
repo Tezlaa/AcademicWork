@@ -10,6 +10,9 @@ class Program
 
         Collection2 collection2 = new Collection2();
         collection2.Start();
+
+        Collection3 collection3 = new Collection3();
+        collection3.Start();
     }
 }
 
@@ -48,5 +51,21 @@ class Collection2
 
         ResultBrackets resultLine2 = validBrackets.IsCorrect(line2);
         Console.WriteLine(resultLine2.ToString());
+    }
+}
+
+class Collection3
+{
+    public void Start()
+    {
+        CombinationsQueue combinations = new CombinationsQueue(2, 3, 5);
+        List<int> result = combinations.GetSequence(10);
+        
+        Console.WriteLine();
+        foreach (var number in result)
+        {
+            Console.Write($"{number} ");
+        }
+        Console.WriteLine();
     }
 }

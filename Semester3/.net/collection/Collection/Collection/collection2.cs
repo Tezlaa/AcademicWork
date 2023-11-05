@@ -26,8 +26,6 @@ public class ValidBrackets
             else if (line[i] == ')' || line[i] == '}' || line[i] == ']')
             {
                 char last = stack.Pop();
-                Console.WriteLine(line[i]);
-                Console.WriteLine(last);
                 if (keyValuePairs[line[i]] != last)
                 {
                     return new ResultBrackets(false, i);
@@ -54,5 +52,5 @@ public readonly struct ResultBrackets
     public bool _isValid { get; init; }
     public int? _unvalidIndex { get; init;}
 
-    public override string ToString() => $"Is valid: {_isValid}, Unvalid index: {_unvalidIndex}";
+    public override string ToString() => $"Is valid: {_isValid}, valid chars: {_unvalidIndex}";
 }
