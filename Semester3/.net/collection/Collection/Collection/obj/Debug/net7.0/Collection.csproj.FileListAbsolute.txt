@@ -1,0 +1,14 @@
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\bin\Debug\net7.0\Collection.exe
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\bin\Debug\net7.0\Collection.deps.json
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\bin\Debug\net7.0\Collection.runtimeconfig.json
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\bin\Debug\net7.0\Collection.dll
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\bin\Debug\net7.0\Collection.pdb
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\obj\Debug\net7.0\Collection.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\obj\Debug\net7.0\Collection.AssemblyInfoInputs.cache
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\obj\Debug\net7.0\Collection.AssemblyInfo.cs
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\obj\Debug\net7.0\Collection.csproj.CoreCompileInputs.cache
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\obj\Debug\net7.0\Collection.dll
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\obj\Debug\net7.0\refint\Collection.dll
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\obj\Debug\net7.0\Collection.pdb
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\obj\Debug\net7.0\Collection.genruntimeconfig.cache
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\collection\Collection\Collection\obj\Debug\net7.0\ref\Collection.dll

@@ -1,0 +1,3 @@
+Team: team1 | Number of games: 2 | Wins: 1 | Draws: 1 | Loses: 0 | Points: 4
+Team: team2 | Number of games: 3 | Wins: 0 | Draws: 1 | Loses: 2 | Points: 1
+Team: team3 | Number of games: 1 | Wins: 1 | Draws: 0 | Loses: 0 | Points: 3

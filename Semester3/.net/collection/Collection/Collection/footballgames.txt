@@ -1,0 +1,3 @@
+team1;2;team2;1:
+team2;0;team3;1:
+team2;1;team1;1:
