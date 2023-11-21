@@ -1,0 +1,14 @@
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\bin\Debug\net7.0\Parking.exe
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\bin\Debug\net7.0\Parking.deps.json
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\bin\Debug\net7.0\Parking.runtimeconfig.json
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\bin\Debug\net7.0\Parking.dll
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\bin\Debug\net7.0\Parking.pdb
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\obj\Debug\net7.0\Parking.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\obj\Debug\net7.0\Parking.AssemblyInfoInputs.cache
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\obj\Debug\net7.0\Parking.AssemblyInfo.cs
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\obj\Debug\net7.0\Parking.csproj.CoreCompileInputs.cache
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\obj\Debug\net7.0\Parking.dll
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\obj\Debug\net7.0\refint\Parking.dll
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\obj\Debug\net7.0\Parking.pdb
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\obj\Debug\net7.0\Parking.genruntimeconfig.cache
+D:\Developments\KNU\AcademicWorkPrograming\Semester3\.net\individualProject\Parking\Parking\obj\Debug\net7.0\ref\Parking.dll

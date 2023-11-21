@@ -58,12 +58,37 @@ class C3(C2):
     
     color = property(fset=_set_color)
     border = property(fset=_set_border)
-    
+
+
+def display_menu():
+    print("Menu:")
+    print("1. Show Array")
+    print("2. Set Array")
+    print("3. Change Color")
+    print("4. Change Border Size")
+    print("5. Quit")
+
 
 if __name__ == '__main__':
     array = C3('GREEN', 10)
-    array.show_array()
-    array.set_array(['hello', 'world', 'my', 'name', 'is', 'Bogdan'])
-    array.color = 'RED'
-    array.border = 22
-    array.show_array()
+
+    while True:
+        display_menu()
+        choice = input("Enter your choice (1-5): ")
+
+        if choice == '1':
+            array.show_array()
+        elif choice == '2':
+            new_array = input("Enter a new array (comma-separated): ").split(',')
+            array.set_array(new_array)
+        elif choice == '3':
+            new_color = input(f"Enter a new color ({', '.join(C3.COLOR.keys())}): ")
+            array.color = new_color
+        elif choice == '4':
+            new_border_size = int(input("Enter a new border size: "))
+            array.border = new_border_size
+        elif choice == '5':
+            print("Exiting the program.")
+            break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 5.")

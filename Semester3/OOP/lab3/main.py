@@ -10,6 +10,11 @@ class Matrix:
                 for j in range(3):
                     self.data[i][j] = int(row[j])
 
+    def save_to_file(self, filename):
+        with open(filename, 'w') as file:
+            for row in self.data:
+                file.write(' '.join(map(str, row)) + '\n')
+
     def display(self):
         for row in self.data:
             print(' '.join(map(str, row)))
@@ -41,8 +46,10 @@ class Matrix:
 
 
 if __name__ == "__main__":
+    file_name = 'matrix.txt'
+    
     matrix = Matrix()
-    matrix.load_from_file('matrix.txt')
+    matrix.load_from_file(file_name)
     
     print("Matrix:")
     matrix.display()
@@ -55,6 +62,8 @@ if __name__ == "__main__":
     matrix.replace_element(row, col, value)
     print(f"Replaced element at ({row}, {col}) with {value}:")
     matrix.display()
+
+    matrix.save_to_file(file_name)
     
     determinant = matrix.calculate_determinant()
     print("Determinant:", determinant)
