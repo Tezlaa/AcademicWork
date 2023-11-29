@@ -78,76 +78,78 @@ using namespace std;
 //}
 
  //EXP 3
-int main() {
-    BinarySearchTree bstree;
-    string word;
-    char _char = 'a';
-    int n_char = 0;
-    int n = 0;
-
-    while (n < 200000) {
-        n++;
-        int value = rand();
-
-        word = string(n_char, _char + (n % 100));
-        if (n % 26 == 0) {
-            n_char ++;
-        }
-
-        bstree.insert(word.data(), value);
-
-        if (n % 50000 == 0) {
-            _char++;
-            auto start_time = chrono::high_resolution_clock::now();
-            bstree.lookup(word.data());
-            auto end_time = chrono::high_resolution_clock::now();
-            const auto durationNS = (end_time - start_time).count();
-
-            chrono::duration<double, milli> fp_ms = end_time - start_time;
-            const auto durationMS = fp_ms.count();
-
-            cout << n << " " << durationMS << " milli" << endl;
-        }
-        word = "";
-    }
-
-    cout << endl << endl;
-
-    HashTable hashtable(200000);
-
-    n = 0;
-    while (n < 200000) {
-        n++;
-        int value = rand();
-
-        word = string(n_char, _char + (n % 100));
-        if (n % 26 == 0) {
-            n_char++;
-        }
-
-        hashtable.insert(word.data(), value);
-
-        if (n % 50000 == 0) {
-            _char++;
-            auto start_time = chrono::high_resolution_clock::now();
-            hashtable.lookup(word.data());
-            auto end_time = chrono::high_resolution_clock::now();
-            const auto durationNS = (end_time - start_time).count();
-
-            chrono::duration<double, milli> fp_ms = end_time - start_time;
-            const auto durationMS = fp_ms.count();
-
-            cout << n << " " << durationMS << " milli" << endl;
-        }
-        word = "";
-    }
-
-    return 0;
-}
+//int main() {
+//    BinarySearchTree bstree;
+//    string word;
+//    char _char = 'a';
+//    int n_char = 0;
+//    int n = 0;
+//
+//    while (n < 200000) {
+//        n++;
+//        int value = rand();
+//
+//        word = string(n_char, _char + (n % 100));
+//        if (n % 26 == 0) {
+//            n_char ++;
+//        }
+//
+//        bstree.insert(word.data(), value);
+//
+//        if (n % 50000 == 0) {
+//            _char++;
+//            auto start_time = chrono::high_resolution_clock::now();
+//            bstree.lookup(word.data());
+//            auto end_time = chrono::high_resolution_clock::now();
+//            const auto durationNS = (end_time - start_time).count();
+//
+//            chrono::duration<double, milli> fp_ms = end_time - start_time;
+//            const auto durationMS = fp_ms.count();
+//
+//            cout << n << " " << durationMS << " milli" << endl;
+//        }
+//        word = "";
+//    }
+//
+//    cout << endl << endl;
+//
+//    HashTable hashtable(200000);
+//
+//    n = 0;
+//    while (n < 200000) {
+//        n++;
+//        int value = rand();
+//
+//        word = string(n_char, _char + (n % 100));
+//        if (n % 26 == 0) {
+//            n_char++;
+//        }
+//
+//        hashtable.insert(word.data(), value);
+//
+//        if (n % 50000 == 0) {
+//            _char++;
+//            auto start_time = chrono::high_resolution_clock::now();
+//            hashtable.lookup(word.data());
+//            auto end_time = chrono::high_resolution_clock::now();
+//            const auto durationNS = (end_time - start_time).count();
+//
+//            chrono::duration<double, milli> fp_ms = end_time - start_time;
+//            const auto durationMS = fp_ms.count();
+//
+//            cout << n << " " << durationMS << " milli" << endl;
+//        }
+//        word = "";
+//    }
+//
+//    return 0;
+//}
 
 // EXP 6
 
 int main() {
+    const char* filename = "war_and_peace.txt.utf8";
+    ifstream file(filename);
     int n = 0;
     string word;
     int n_char = 0;
@@ -156,14 +158,9 @@ int main() {
 
     HashTable hashtable(200000, "Y");
 
-    while (n < 200000) {
+    while (file >> word && n < 200000) {
         n++;
         int value = rand();
-
-        word = string(n_char, _char + (n % 100));
-        if (n % 26 == 0) {
-            n_char++;
-        }
 
         words_in_hashtable.push_back(word);
 
