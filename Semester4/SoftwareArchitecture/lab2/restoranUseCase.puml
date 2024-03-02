@@ -1,0 +1,39 @@
+@startuml
+
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Guest" as guest
+actor "Service Companies" as serviceCompanies
+actor "Business Travelers" as businessTravelers
+actor "Families/Groups" as familiesGroups
+actor "Event Attendees" as eventAttendees
+actor "Hotel Management" as hotelManagement
+
+rectangle "Hotel Management System" {
+  usecase "Register Guest" as registerGuest
+  usecase "Book Room" as bookRoom
+  usecase "Provide Services" as provideServices
+  usecase "Manage Reservations" as manageReservations
+  usecase "Ensure Security" as ensureSecurity
+  usecase "Access Guest Information" as accessGuestInformation
+  usecase "Integrate with Other Systems" as integrateWithOtherSystems
+  usecase "Generate Reports" as generateReports
+
+  guest --> registerGuest
+  guest --> bookRoom
+  serviceCompanies --> bookRoom
+  businessTravelers --> bookRoom
+  familiesGroups --> bookRoom
+  eventAttendees --> bookRoom
+
+  hotelManagement --> manageReservations
+  hotelManagement --> ensureSecurity
+  hotelManagement --> accessGuestInformation
+  hotelManagement --> integrateWithOtherSystems
+  hotelManagement --> generateReports
+
+  bookRoom --> provideServices
+}
+
+@enduml
