@@ -1,65 +1,36 @@
 @startuml
+
 left to right direction
 
 actor "Адміністрація" as admin
 actor "Маркетолог" as marketing
 actor "Гість" as guest
 
-actor "Туристи" as act_t
-actor "Подородні бізнесмени" as act_t_b
-actor "Сім'ї та группи" as act_f_a_g
-actor "Відівдувачі подій" as act_e_v
-actor "Ділові туристи" as act_b_t
-actor "Послугові компанії" as act_s_c
-
-guest <|-- act_b_t 
-guest <|-- act_e_v
-guest <|-- act_f_a_g
-act_s_c --|> guest
-act_t_b --|> guest
-act_t --|> guest
-
-
-rectangle "База данних" {
-  usecase "Збір іформації" as collect_data
-  usecase "Отримання іформації о клієнті" as receive_client_info
-
-  usecase "Доступні кімнати" as available_rooms
-
-  usecase "Черга в обробку" as queue
-
-  admin -up-> available_rooms
-  admin -up-> queue
-  admin -up-> collect_data
-  admin -up-> receive_client_info
-
-  marketing -up-> collect_data
-}
-
 
 rectangle "Система управління готелем" {
-  usecase "Вхід" as login
-  usecase "Ререєстрація" as register
+  rectangle "Адмін панель" {
+    usecase "Додавання доступних кімнат" as added_available_rooms
+    usecase "Обробка черги" as processing_queue
+    usecase "Отримати інформацію о клієнті" as get_user_info
+    usecase "Отримати інформацію по бронюванні" as get_book_info
 
-  usecase "Обрання рівня комфорту" as comfort_level
+    admin -- added_available_rooms
+    admin -- processing_queue
+    admin -- get_book_info
+    admin -- get_user_info
+    marketing -- get_book_info
+  }
+  usecase "Рерєстрація" as register
   usecase "Забронювати кімнату" as book_room
+  usecase "Обрання рівня комфорту" as select_comfort_level
+  usecase "Отримати інформацію о бронюванні" as get_user_book_info
+  usecase "Обрання доступних кімнат" as select_available_rooms
 
-  usecase "Інформація о бронюванні" as book_info
-
-  guest ---> register
-  register -|> login
-  register ...> collect_data: <<include>>
-  receive_client_info ...> login: <<extend>> 
-
-  guest ---> login
-  login -|> comfort_level
-  comfort_level --|> book_room
-  comfort_level <.. available_rooms : <<extend>>
-  book_room ...> queue : <<include>>
-
-  book_info <--- guest
-  book_info <. queue : <<extend>>
-
+  guest -> book_room
+  book_room ..> select_available_rooms: <<include>>
+  guest -> select_comfort_level
+  guest -> register
+  guest - get_user_book_info
 }
 
 
